@@ -8,7 +8,8 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const fixSwedishCharacters = (text) => {
         return text.replace(/ö/g, 'ö').replace(/ä/g, 'ä').replace(/å/g, 'å');
     };
-    return (<div className="personal-container px-4">
+    return (
+        <div className="personal-container px-4">
         <button className="text-xl text-[#505476] font-semibold rounded-lg
                     hover:px-2
                     hover:bg-violet-300
@@ -58,9 +59,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
             <p className=" text-[14px] mt-2">If you would like to see more of my projects, feel free to visit my <a className="text-blue-600" href="https://github.com/elaheesk?tab=repositories">GitHub</a>.</p>
 
         </div>
-
-
-
-    </div>)
+        </div>
+    )
 }
 export default SideBar;
