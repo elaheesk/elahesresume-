@@ -33,8 +33,8 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 ];
 
 export const languages = ["Swedish", "English", "Persian"];
-export const technicalProjects ="<div><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
-export const technicalProjectPharmacist ="<div><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
+export const technicalProjects = "<div><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
+export const technicalProjectPharmacist = "<div><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
 export const workexperiences = [
     {
         jobTitle: "Software developer",
@@ -137,7 +137,7 @@ export const frontendSkills = [
     { name: <p className="before:content-['TypeScript'] hover:before:content-['TypeScript:_Great_knowledge']" ></p> },
     { name: <p className="before:content-['Vue.js'] hover:before:content-['Vue.js:_Great_knowledge']" ></p> },
     { name: <p className="before:content-['HTML5/CSS3'] hover:before:content-['HTML5/CSS3:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Material UI/Vuetify'] hover:before:content-['Material_UI/Vuetify:_Great_knowledge']" ></p> },
+    { name: <p className="before:content-['Material_UI/Vuetify'] hover:before:content-['Material_UI/Vuetify:_Great_knowledge']" ></p> },
     { name: <p className="before:content-['Tailwind_CSS'] hover:before:content-['Tailwind_CSS:_Great_knowledge']" ></p> },
     { name: <p className="before:content-['Sass_&_Bootstrap'] hover:before:content-['Sass_&_Bootstrap:_Great_knowledge']" ></p> },
     { name: <p className="before:content-['WCAG'] hover:before:content-['WCAG:_Great_knowledge']"></p> }

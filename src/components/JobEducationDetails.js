@@ -1,5 +1,6 @@
 const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, description }) => {
-    return (<li className="mt-2">
+    return (
+        <li className="mt-2 md:pl-4">
         <div className="flex justify-between">
             <h3 className="text-sm font-semibold">{title}</h3>
             <div>{date}</div>
@@ -10,6 +11,7 @@ const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, descri
         <div 
             dangerouslySetInnerHTML={{ __html: description }}
         />
-    </li>)
+        </li>
+    )
 }
 export default JobEducationDetails;
