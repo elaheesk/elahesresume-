@@ -16,17 +16,20 @@ module.exports = {
             'md': '768px',
             // => @media (min-width: 768px) { ... }
 
-            'lg': '1024px',
+            'lg': '960px',
+            // => @media (min-width: 960px) { ... }
+
+            'xl': '1024px',
             // => @media (min-width: 1024px) { ... }
 
-            'xl': '1280px',
+            '2xl': '1280px',
             // => @media (min-width: 1280px) { ... }
 
-            '2xl': '1536px',
+            '3xl': '1536px',
             // => @media (min-width: 1536px) { ... }
         },
         fontSize: {
-            'md':'0.75rem',
+            'md': '0.75rem',
             'xl': '1rem',
             '2xl': '1.125rem',
             '3xl': '1.953rem',
@@ -36,4 +39,3 @@ module.exports = {
     },
     plugins: [],
 }
-

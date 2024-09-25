@@ -4,7 +4,7 @@ import Home from "./Home";
 function App() {
   
     return (
-        <div className="p-6 [1000px] grid justify-items-stretch">
+        <div className="pt-4 grid justify-items-stretch">
             <Link to="/"></Link>
             <Routes>
                 <Route path="/Details" element={<Details />} />
