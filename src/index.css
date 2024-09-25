@@ -111,24 +111,6 @@ li {
     }
 }
 
-.read-more-link {
-    width: 500px;
-    height: 100px;
-    position: relative;
-    animation: linkmove 7s infinite;
-}
-
-@keyframes linkmove {
-    from {
-        left: 0px;
-    }
-
-    to {
-        left: 500px;
-        color: transparent;
-    }
-}
-
 .avatar {
     height: 130px;
     width: 150px;

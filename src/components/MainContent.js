@@ -14,8 +14,7 @@ const MainContent = () => {
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
             <div id="resume-description" className="rounded-lg">{resumeDescription}</div>
             <p className="introduction-text p-2">{intoduction}</p>
-            <Link className="read-more-link px-2 mt-0 underline text-blue-600
-                    hover:px-2
+            <Link className="px-2 underline text-blue-600
                     hover:rounded-lg
                     hover:bg-violet-300
                     hover:shadow-inner
@@ -23,7 +22,7 @@ const MainContent = () => {
                     hover:shadow-lg shadow-violet-100
                     hover:text-black"
                 to="/details">Read more</Link>
-            <hr className="mt-0"></hr>
+            <hr className="mt-2"></hr>
         <div className="flex justify-start mt-0">
             <GiSkills className="giSkills mt-1" />
             <h2 className="text-2xl font-bold text-[#505476] pl-1">Skills</h2>
