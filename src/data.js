@@ -33,15 +33,15 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 ];
 
 export const languages = ["Swedish", "English", "Persian"];
-export const technicalProjects ="<div><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 hover:text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
-export const technicalProjectPharmacist ="<div><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application 2 years ago using modern web development technologies and deployed it via Firebase.This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
+export const technicalProjects ="<div><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
+export const technicalProjectPharmacist ="<div><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
 export const workexperiences = [
     {
         jobTitle: "Software developer",
         date: "Jan 2023 - Present",
         company: "Tietoevry Tech Services, Solna",
         companyLink: "https://www.tietoevry.com/",
-        jobDescription: "<div>I have developed both external and internal e‑services for the City of Stockholm, <a class='underline underline-offset-2 hover:no-underline hover:text-blue-600' href='https://start.stockholm/e-tjanster/'>Start.Stockholm/e-tjanster</a>,  with varying levels of complexity.I have worked on existing services and been involved in building new ones. Although I have more expertise in frontend than backend, I have also developed extensively in both backend and frontend and have been part of the process throughout the project's lifecycle, from the pre‑study phase, requirements management, and test case creation to development and maintenance.Based on UX design sketches, I have contributed to implementing the frontend, writing code, and continuously collaborating closely with UX to ensure accessibility from the sketch stage and to ensure alignment with the Web Manual, which contains the current guidelines for all of Stockholm's e‑services. My role has also included significant accessibility aspects, such as ongoing quality assurance and accessibility testing of individual components.</div>"
+        jobDescription: "<div>I have developed both external and internal e‑services for the City of Stockholm with varying levels of complexity. I have worked on existing services and been involved in building new ones, in total around 10 e-services which can be found at <a class='underline underline-offset-2 hover:no-underline text-blue-600' href='https://start.stockholm/e-tjanster/'>Start.Stockholm/e-tjanster</a>. Although I have more expertise in frontend than backend, I have also developed extensively in both backend and frontend and have been part of the process throughout the project's lifecycle, from the pre‑study phase, requirements management, and test case creation to development and maintenance. Based on UX design sketches, I have contributed to implementing the frontend, writing code, and continuously collaborating closely with UX to ensure accessibility from the sketch stage and to ensure alignment with the Web Manual, which contains the current guidelines for all of Stockholm's e‑services. My role has also included significant accessibility aspects, such as ongoing quality assurance and accessibility testing of individual components.</div>"
 
     },
     {
@@ -49,7 +49,7 @@ export const workexperiences = [
         date: "Apr 2022 - Dec 2022",
         company: "Hopen, Stockholm",
         companyLink: "https://hopen.se/",
-        jobDescription: "I have been building the Hopen platform from the start until we went live.The framework we used was React with typescript to build new features as well as maintaining and improving existing code bases.I have also written unit tests(with Jest) for our code.The whole frontend work was done by me and my collauge.We worked agile in two‑week sprints and used Jira as a tool to manage project.The platform is available at <a class='underline underline-offset-2 hover:no-underline hover:text-blue-600' href='https://hopen.se/'>hopen.se</a></div>"
+        jobDescription: "I have been building the Hopen platform from the start until we went live. The framework we used was React with typescript to build new features as well as maintaining and improving existing code bases. I have also written unit tests (using Jest) for our code. The whole frontend work was done by me and my collauge. We worked agile in two‑week sprints and used Jira as a tool to manage project. The platform is available at <a class='underline underline-offset-2 hover:no-underline text-blue-600' href='https://hopen.se/'>hopen.se</a></div>"
     },
     {
         jobTitle: "Full-stack developer intern",
@@ -76,20 +76,20 @@ export const workexperiences = [
 
 export const educationList = [
     {
-        title: "Bachelor of Science in Pharmacy",
-        date: "Aug 2011 - Jun 2014",
-        school: "Uppsala University, Uppsala",
-        credits: "180 Credits"
+        title: "Ec Education Frontend developer",
+        date: "Aug 2021 - Feb 2022",
+        school: "Ec Education Helsingborg, Helsingborg",
+        credits: "120 Credits"
     }, {
         title: "Course in Macroeconomics",
         date: "Sep 2016 - Dec 2016",
         school: "Lund University, Lund",
         credits: "30 Credits"
     }, {
-        title: "Ec Education Frontend developer",
-        date: "Aug 2021 - Feb 2022",
-        school: "Ec Education Helsingborg, Helsingborg",
-        credits: "120 Credits"
+        title: "Bachelor of Science in Pharmacy",
+        date: "Aug 2011 - Jun 2014",
+        school: "Uppsala University, Uppsala",
+        credits: "180 Credits"
     }
 
 

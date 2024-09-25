@@ -11,11 +11,19 @@ const MainContent = () => {
     const [toggleAccordion, setToggleAccordion] = useState(false);
     return (
         <div className="basis-3/4 pl-6 mt-4"
-        onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
-        <p className="introduction-text p-2">{intoduction}</p>
-        <Link className="read-more-link px-2 mt-0 underline" to="/details">Read more</Link>
-        <hr className="mt-2"></hr>
-        <div id="resume-description" className="rounded-lg">{resumeDescription}</div>
+            onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
+            <div id="resume-description" className="rounded-lg">{resumeDescription}</div>
+            <p className="introduction-text p-2">{intoduction}</p>
+            <Link className="read-more-link px-2 mt-0 underline text-blue-600
+                    hover:px-2
+                    hover:rounded-lg
+                    hover:bg-violet-300
+                    hover:shadow-inner
+                    hover:shadow-violet-300
+                    hover:shadow-lg shadow-violet-100
+                    hover:text-black"
+                to="/details">Read more</Link>
+            <hr className="mt-0"></hr>
         <div className="flex justify-start mt-0">
             <GiSkills className="giSkills mt-1" />
             <h2 className="text-2xl font-bold text-[#505476] pl-1">Skills</h2>
