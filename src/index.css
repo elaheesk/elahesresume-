@@ -56,12 +56,12 @@ li {
     background-color: transparent;
     position: absolute;
     color: transparent;
-    height: 100px;
+    height: 80px;
     font-size: 2px;
     font-weight: 100;
     z-index: 10;
     padding: 15px;
-    width: 33%;
+    width: 50%;
     animation-name: resume;
     animation-duration: 8s;
 }
@@ -115,7 +115,7 @@ li {
     width: 500px;
     height: 100px;
     position: relative;
-    animation: linkmove 4s infinite;
+    animation: linkmove 7s infinite;
 }
 
 @keyframes linkmove {
