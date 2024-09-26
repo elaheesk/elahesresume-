@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { FaPlus } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
+import { FaPlus } from "react-icons/fa6";
 import { questions } from "../data"
+
 const Accordion = () => {
     const [accordionContent, setAccordionContent] = useState([])
 
     const toggleAccordion = (idx) => {
         const updatedAccordion = accordionContent.map((accordion, index) => {
+
             if (index === idx) {
                 return {
                     ...accordion,
                     isOpen: !accordion.isOpen,
                 };
-
             } else {
                 return accordion;
             }
         });
+
         setAccordionContent(updatedAccordion);
     }
+
     useEffect(() => {
         setAccordionContent(questions);
     }, [])
@@ -31,16 +34,14 @@ const Accordion = () => {
                     key={index}>
                     <div className="flex justify-between text-2xl font-semibold">
                         {accordion.question}
-                     {accordion.isOpen ? <IoCloseSharp /> : <FaPlus />}
+                        {accordion.isOpen ? <IoCloseSharp /> : <FaPlus />}
                     </div>
                     <div className="accordion-answers whitespace-pre-line p-2">{accordion.isOpen ? <div
-                        dangerouslySetInnerHTML={{ __html: accordion.answer }}
-                    /> : ""} </div>
-                    
+                        dangerouslySetInnerHTML={{ __html: accordion.answer }} /> : ""}
+                    </div>
                 </div>
             ))}
         </div>
     )
-
 }
 export default Accordion;

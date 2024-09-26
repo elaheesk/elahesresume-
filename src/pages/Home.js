@@ -1,7 +1,6 @@
 ﻿import React, { useState } from "react";
-import MainContent from "./components/MainContent";
-import SideBar from "./components/SideBar";
-
+import SideBar from "../components/SideBar";
+import MainContent from "../components/MainContent";
 
 const Home = () => {
     const [tooltipContent, setTooltipContent] = useState(false);
@@ -13,8 +12,7 @@ const Home = () => {
                         <div className="img-container">
                             <div className="heading-container grid justify-items-stretch">
                                 <h1 className="text-3xl font-semibold justify-self-center text-white px-4 mt-3">Elahe Eskandari</h1>
-                                <img src="/Image.jpg" alt="avatar"
-                                    className="avatar px-4 justify-self-center mt-14" />
+                                <img src="/Image.jpg" alt="avatar" className="avatar px-4 justify-self-center mt-14" />
                             </div>
                         </div>
                         <SideBar tooltipContent={tooltipContent} setTooltipContent={setTooltipContent} />
