@@ -103,7 +103,7 @@ export const personalDetails = [
         isLink: true,
     },
     {
-        label: 'Phone number',
+        label: 'Phone',
         value: '+46 738923888',
         icon: <FaPhoneAlt className="text-[#505476] size-4 mt-2" />,
         isLink: false,

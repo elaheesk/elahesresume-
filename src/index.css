@@ -230,12 +230,12 @@ li {
     color: #505476;
 }
 
-.container {
+.details-container {
     position: relative;
     margin: 0 auto;
 }
 
-    .container .content {
+    .details-container .details-content {
         position: absolute;
         bottom: 0;
         background: rgb(0, 0, 0);

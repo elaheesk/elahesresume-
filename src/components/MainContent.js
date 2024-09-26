@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import Skills from "./Skills";
 import { Link } from "react-router-dom";
 import { MdWorkHistory } from "react-icons/md";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { GiSkills } from "react-icons/gi";
-import Skills from "./Skills";
 import JobEducationDetails from "../components/JobEducationDetails";
 import { intoduction, workexperiences, educationList, frontendSkills, backendSkills, toolsSkills, resumeDescription } from "../data";
 
@@ -29,19 +29,19 @@ const MainContent = () => {
             </div>
             <div className="flex justify-between mb-2">
                 <div className="md:pl-3 w-1/3">
-                    <h3 className="text-sm font-semibold">Frontend</h3>
+                    <h3 className="text-sm font-semibold mb-2">Frontend</h3>
                     {frontendSkills.map((skill, index) =>
                         <Skills className="pr-0" key={index} skill={skill.name} />
                     )}
                 </div>
                 <div className="w-1/3">
-                    <h3 className="text-sm font-semibold">Backend</h3>
+                    <h3 className="text-sm font-semibold mb-2">Backend</h3>
                     {backendSkills.map((skill, index) =>
                         <Skills key={index} skill={skill.name} />
                     )}
                 </div>
                 <div className="w-1/4">
-                    <h3 className="text-sm font-semibold">Tools</h3>
+                    <h3 className="text-sm font-semibold mb-2">Tools</h3>
                     {toolsSkills.map((skill, index) =>
                         <Skills className="ml-0" key={index} skill={skill.name} knowledgeLevel={skill.knowledgeLevel} />
                     )}

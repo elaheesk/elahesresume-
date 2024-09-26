@@ -1,6 +1,6 @@
 ﻿import { Link, Routes, Route } from "react-router-dom";
 import Details from "./pages/Details";
-import Home from "./Home";
+import Home from "./pages/Home";
 function App() {
   
     return (
@@ -13,5 +13,4 @@ function App() {
         </div >
     );
 }
-
 export default App;
