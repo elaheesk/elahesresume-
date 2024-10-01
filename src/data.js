@@ -91,8 +91,6 @@ export const educationList = [
         school: "Uppsala University, Uppsala",
         credits: "180 Credits"
     }
-
-
 ]
 export const personalDetails = [
     {
@@ -159,6 +157,17 @@ export const toolsSkills = [
     { name: <p className="before:content-['Figma/Balsamiq'] hover:before:content-['Figma/Balsamiq:_Great_knowledge']"></p> },
     { name: <p className="before:content-['Unit_Testing'] hover:before:content-['Unit_Testing:_Great_knowledge']"></p> },
 ];
-
+export const certifications = [
+    {
+        title: "AI-Basic Course",
+        href: "/AI_basic_course.pdf",
+    }, {
+        title: "AI in your work",
+        href: "/AI_in_your_work.pdf",
+    }, {
+        title: "IT-security for Employees",
+        href: "/IT_security.pdf",
+    }
+]
 export const backgroundImgSrc = "https://th.bing.com/th/id/OIP.srBUpXrs35PHw6bSFEP_oAHaE7?w=280&h=187&c=7&r=0&o=5&pid=1.7";
 export const resumeDescription = "This resume is custom-built by me using React, showcasing my ability to independently develop responsive and dynamic web applications."
