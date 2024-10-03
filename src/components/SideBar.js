@@ -64,9 +64,9 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
             </div>
             <div className="mt-8">
                 <h2 className="text-xl text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
-                <ul className="list-none p-0">
+                <div className="list-none p-0">
                     {certifications.map((cerificate, idx) =>
-                        <li key={idx}>
+                        <div key={idx}>
                             <a
                                 href={cerificate.href}
                                 target="_blank"
@@ -74,9 +74,9 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                                 className="text-blue-600 underline hover:no-underline">
                                 {cerificate.title}
                             </a>
-                        </li>
+                        </div>
                     )}
-                </ul>
+                </div>
             </div>
         </div>
     )
