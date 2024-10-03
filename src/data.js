@@ -1,7 +1,8 @@
 ﻿import { FaPhoneAlt, FaLinkedin, FaGithub, FaHome } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-export const intoduction = "Enthusiastic Software developer with over 3 years of experience specializing in React.Proven ability to create dynamic, user-friendly applications, with a solid foundation in backend technologies like .NET and C#.Recognized for being curious, creative, and determined, as well as a strong team player who takes initiative and demonstrates responsibility in organizing work and solving tasks efficiently. I am passionate about delivering excellent customer value, with a focus on both the details and the bigger picture solving customer challenges by integrating their business logic into high-quality solutions. "
+
+export const intoduction = "Enthusiastic and determined Software developer with over 3 years of experience specializing in React.Proven ability to create dynamic, user-friendly applications, with a solid foundation in backend technologies like .NET and C#.Recognized for being curious, creative, and determined, as well as a strong team player who takes initiative and demonstrates responsibility in organizing work and solving tasks efficiently. I am passionate about delivering excellent customer value, with a focus on both the details and the bigger picture solving customer challenges by integrating their business logic into high-quality solutions. "
 export const questions = [{
     isOpen: false,
     question: "What makes me the right candidate?",
@@ -58,22 +59,22 @@ export const workexperiences = [
         companyLink: "",
         jobDescription: "Worked on developing the portfolio functionality and writing unit tests for it. Switching from backend and frontend using Vue.js, Node.js and PostgreSQL."
     },
-    {
-        jobTitle: "Pharmacist-seasonal",
-        date: "Apr 2020 - Aug 2020",
-        company: "ApoEx, Stockholm/Bromma",
-        companyLink: "",
-        jobDescription: "Within inpatient care. Product care, management of drug storehouses, work around clinical trials, manufacturing of cytostatics and sterile preparations in Cleanroom."
-    },
-    {
-        jobTitle: "Ambulating pharmacist",
-        date: "Jun 2014 - Aug 2020",
-        company: "Lloyds (Doz), Sweden",
-        companyLink: "",
-        jobDescription: "Worked at different pharmacies around the country. The job demanded flexibility, problem solving mentality, genuine curiosity, commitment and an appreciation for diversity of different kind of colleagues and customers."
-    }
-];
 
+];
+export const previousWorkexperiences = [{
+    jobTitle: "Pharmacist-seasonal",
+    date: "Apr 2020 - Aug 2020",
+    company: "ApoEx, Stockholm/Bromma",
+    companyLink: "",
+    jobDescription: "Within inpatient care. Product care, management of drug storehouses, work around clinical trials, manufacturing of cytostatics and sterile preparations in Cleanroom."
+},
+{
+    jobTitle: "Ambulating pharmacist",
+    date: "Jun 2014 - Aug 2020",
+    company: "Lloyds (Doz), Sweden",
+    companyLink: "",
+    jobDescription: "Worked at different pharmacies around the country. The job demanded flexibility, problem solving mentality, genuine curiosity, commitment and an appreciation for diversity of different kind of colleagues and customers."
+}]
 export const educationList = [
     {
         title: "Ec Education Frontend developer",
@@ -91,8 +92,6 @@ export const educationList = [
         school: "Uppsala University, Uppsala",
         credits: "180 Credits"
     }
-
-
 ]
 export const personalDetails = [
     {
@@ -129,36 +128,49 @@ export const personalDetails = [
         isLink: true,
     },
 ];
+
 export const frontendSkills = [
-    { name: <p className="before:content-['Javascript'] hover:before:content-['Javascript:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Jquery'] hover:before:content-['Jquery:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['React_(Redux/useContext)'] hover:before:content-['React_(Redux/useContext):_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['React_Native'] hover:before:content-['React_Native:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['TypeScript'] hover:before:content-['TypeScript:_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['Vue.js'] hover:before:content-['Vue.js:_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['HTML5/CSS3'] hover:before:content-['HTML5/CSS3:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Material_UI/Vuetify'] hover:before:content-['Material_UI/Vuetify:_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['Tailwind_CSS'] hover:before:content-['Tailwind_CSS:_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['Sass_&_Bootstrap'] hover:before:content-['Sass_&_Bootstrap:_Great_knowledge']" ></p> },
-    { name: <p className="before:content-['WCAG'] hover:before:content-['WCAG:_Great_knowledge']"></p> }
+    { name: "Javascript", knowledgeLevel: "Great knowledge" },
+    { name: "Jquery", knowledgeLevel: "Great knowledge" },
+    { name: "React (Redux/useContext)", knowledgeLevel: "Great knowledge" },
+    { name: "React Native", knowledgeLevel: "Great knowledge" },
+    { name: "TypeScript", knowledgeLevel: "Great knowledge" },
+    { name: "Vue.js", knowledgeLevel: "Great knowledge" },
+    { name: "HTML5/CSS3", knowledgeLevel: "Great knowledge" },
+    { name: "Material UI/Vuetify", knowledgeLevel: "Great knowledge" },
+    { name: "Tailwind CSS", knowledgeLevel: "Great knowledge" },
+    { name: "Sass&Bootstrap", knowledgeLevel: "Great knowledge" },
+    { name: "WCAG", knowledgeLevel: "Great knowledge" },
+
 ];
-
-
 export const backendSkills = [
-    { name: <p className="before:content-['C#'] hover:before:content-['C#:_Good_knowledge']"></p> },
-    { name: <p className="before:content-['ASP.Net_MVC'] hover:before:content-['ASP.Net_MVC:_Good_knowledge']"></p> },
-    { name: <p className="before:content-['Entity_Framework'] hover:before:content-['Entity_Framework:_Good_knowledge']"></p> },
-    { name: <p className="before:content-['REST_API'] hover:before:content-['REST_API:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Firebase'] hover:before:content-['Firebase:_Basic_knowledge']"></p> },
-    { name: <p className="before:content-['MySQL'] hover:before:content-['MySQL:_Basic_knowledge']"></p> },
+    { name: "C#", knowledgeLevel: "Good knowledge" },
+    { name: "ASP.Net MVC", knowledgeLevel: "Good knowledge" },
+    { name: "Entity Framework", knowledgeLevel: "Good knowledge" },
+    { name: "REST API", knowledgeLevel: "Great knowledge" },
+    { name: "Firebase", knowledgeLevel: "Basic knowledge" },
+    { name: "MySQL", knowledgeLevel: "Basic knowledge" }
 ];
 export const toolsSkills = [
-    { name: <p className="before:content-['Git'] hover:before:content-['Git:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['GitHub'] hover:before:content-['GitHub:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Azure'] hover:before:content-['Azure:_Good_knowledge']"></p> },
-    { name: <p className="before:content-['Figma/Balsamiq'] hover:before:content-['Figma/Balsamiq:_Great_knowledge']"></p> },
-    { name: <p className="before:content-['Unit_Testing'] hover:before:content-['Unit_Testing:_Great_knowledge']"></p> },
+    { name: "Git", knowledgeLevel: "Great knowledge" },
+    { name: "GitHub", knowledgeLevel: "Great knowledge" },
+    { name: "Azure", knowledgeLevel: "Good knowledge" },
+    { name: "Unit Testing", knowledgeLevel: "Great knowledge" },
+    { name: "Figma/Balsamiq", knowledgeLevel: "Great knowledge" }
 ];
-
-export const backgroundImgSrc = "https://th.bing.com/th/id/OIP.srBUpXrs35PHw6bSFEP_oAHaE7?w=280&h=187&c=7&r=0&o=5&pid=1.7";
+export const certifications = [
+    {
+        title: "AI-Basic Course",
+        href: "/AI_basic_course.pdf",
+    }, {
+        title: "AI in your work",
+        href: "/AI_in_your_work.pdf",
+    }, {
+        title: "IT-security for Employees",
+        href: "/IT_security.pdf",
+    }, {
+        title: "SharePoint Online - M365",
+        href: "/Sharepoint_Online_M365.pdf",
+    }
+]
 export const resumeDescription = "This resume is custom-built by me using React, showcasing my ability to independently develop responsive and dynamic web applications."

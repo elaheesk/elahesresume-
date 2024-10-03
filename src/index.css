@@ -21,6 +21,7 @@ li {
     position: relative;
     margin: 0;
 }
+
 .img-container {
     height: 180px;
     background-color: #505476;
@@ -36,6 +37,36 @@ li {
     animation-duration: 5s;
 }
 
+.text-container {
+    position: relative;
+    max-height: 2.3em;
+    overflow: hidden;
+    margin-bottom: 1px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.text-content {
+    line-height: 1.5em;
+}
+
+.text-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2.5em;
+    background: linear-gradient(to bottom, transparent, white);
+}
+
+.text-container.expanded {
+    max-height: none;
+}
+
+    .text-container.expanded::after {
+        display: none;
+    }
+
 @keyframes animation {
     from {
         background-color: #e9e9e9;
@@ -45,6 +76,34 @@ li {
         background-color: #505476;
     }
 }
+
+.tooltip {
+    position: relative;
+    display: block;
+    background-image: linear-gradient(to left, rgba(2,2,2,0.04), white);
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 140px;
+        color: black;
+        background-image: linear-gradient(to right, rgba(2,2,2,0), #e9e9e9);
+        background: 1px 1px 2px black, 0 0 15px rgba(2,2,2,1), 0 0 15px #e9e9e9;
+        white-space: pre-line;
+        text-align: center;
+        border-radius: 6px;
+        padding: 4px 0px;
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        left: 50%;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        z-index: 1;
+        background-color: white;
+    }
 
 .personal-container {
     background-color: #e9e9e9;
@@ -57,7 +116,7 @@ li {
     height: 0px;
     font-size: 2px;
     font-weight: 100;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     animation-name: resume;
     animation-duration: 8s;
@@ -111,6 +170,7 @@ li {
         padding: 0px;
     }
 }
+
 @media (max-width: 768px) {
     #resume-description {
         font-size: 0px;
@@ -130,7 +190,7 @@ li {
         }
 
         25% {
-            font-size: 14px; 
+            font-size: 14px;
             height: 75px;
             padding: 10px;
             color: white;
@@ -166,6 +226,7 @@ li {
         }
     }
 }
+
 .avatar {
     height: 130px;
     width: 150px;
@@ -230,26 +291,85 @@ li {
     color: #505476;
 }
 
-.details-container {
-    position: relative;
-    margin: 0 auto;
-}
-
-    .details-container .details-content {
-        position: absolute;
-        bottom: 0;
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
-        width: 100%;
-        padding: 90px;
-    }
-
 .accordion:hover {
     box-shadow: 20px 20px 50px 10px #505476;
 }
 
 .introduction-text:hover {
     border-radius: 15px;
-    box-shadow: 5px 5px 10px 10px #505476;
+    box-shadow: 5px 5px 10px 10px #c8cada;
 }
+
+ul {
+    list-style: none;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+    ul li {
+        float: left;
+        width: 16.666%;
+        height: 600px;
+        opacity: 0.4;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+
+        ul li:hover, ul li:first-child ~ li:last-child {
+            width: 50%;
+            opacity: 1;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+            ul li:hover ~ li:last-child {
+                width: 16.666%;
+                opacity: 0.4;
+            }
+
+        ul li:nth-child(1) {
+            background: url("IMG_0046.JPG") top center no-repeat;
+        }
+
+        ul li:nth-child(2) {
+            background: url("IMG_0051.jpg") top right no-repeat;
+        }
+
+        ul li:nth-child(3) {
+            background: url("IMG_7398.jpg") top center no-repeat;
+        }
+
+        ul li:nth-child(4) {
+            background: url("codeImg.jpg") top center no-repeat;
+        }
+
+        ul li::before {
+            content: "";
+            display: block;
+            width: 0;
+            height: 100%;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -webkit-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+        }
+
+        ul li:nth-child(1)::before {
+            background-color: rgba(255, 87, 34, 0.2);
+        }
+
+        ul li:nth-child(2)::before {
+            background-color: rgba(76, 175, 80, 0.25);
+        }
+
+        ul li:nth-child(3)::before {
+            background-color: rgba(33, 150, 243, 0.25);
+        }
+
+        ul li:nth-child(4)::before {
+            background-color: rgba(156, 39, 176, 0.2);
+        }
