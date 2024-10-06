@@ -20,8 +20,8 @@ const MainContent = () => {
         <div className="md:basis-3/4 px-4 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
             <div id="resume-description" className="rounded-lg">{resumeDescription}</div>
-            <p className="introduction-text md:p-2">{intoduction}</p>
-            <Link className="underline text-blue-600 md:px-2 pb-1
+            <p className="introduction-text text-md md:p-2">{intoduction}</p>
+            <Link className="underline text-md text-blue-600 md:px-2 pb-1
                     hover:rounded-lg
                     hover:bg-violet-200
                     hover:shadow-inner
@@ -36,19 +36,19 @@ const MainContent = () => {
             </div>
             <div className="flex justify-between mb-2">
                 <div className="md:pl-3">
-                    <h3 className="text-sm font-semibold mb-2">Frontend</h3>
+                    <h3 className="text-md font-semibold mb-2">Frontend</h3>
                     {frontendSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold mb-2">Backend</h3>
+                    <h3 className="text-md font-semibold mb-2">Backend</h3>
                     {backendSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold mb-2">Tools</h3>
+                    <h3 className="text-md font-semibold mb-2">Tools</h3>
                     {toolsSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
@@ -70,7 +70,7 @@ const MainContent = () => {
                         )}
                     </div>
                 </div>
-                <button className="read-more-btn text-blue-600 underline ml-4 mt-0" onClick={toggleText}>
+                <button className="text-blue-600 text-md underline md:ml-4 mt-0" onClick={toggleText}>
                     {isExpanded ? 'Read Less' : 'Read More'}
                 </button>
             </div>

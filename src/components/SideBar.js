@@ -28,17 +28,17 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                                 <div
                                     onMouseLeave={() => setTooltipContent(false)}
                                     onMouseOver={() => setTooltipContent(true)}
-                                    className="font-semibold">{item.label}
+                                    className="font-semibold text-md">{item.label}
                                 </div>
                                 <p style={{ backgroundColor: tooltipContent ? "#cbccd6" : "transparent" }}
                                     className="rounded-lg ml-1 px-2 bg-[#505476]">
                                     {tooltipContent ? fixSwedishCharacters("Rödabergsgatan 9") : ''}
                                 </p>
                             </div>
-                        ) : <div className="font-semibold">{item.label}</div>
+                        ) : <div className="font-semibold text-md">{item.label}</div>
                         }
                         {item.isLink ? (
-                            <Link className="underline underline-offset-2 hover:no-underline text-blue-600" to={item.link}>{item.value}</Link>
+                            <Link className="underline underline-offset-2 text-md hover:no-underline text-blue-600" to={item.link}>{item.value}</Link>
                         ) : (
                             <p>{item.value}</p>
                         )}
@@ -58,13 +58,13 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                 />   <div className="whitespace-pre-line mt-4"
                     dangerouslySetInnerHTML={{ __html: technicalProjectPharmacist }}
                 />
-                <p className=" text-[14px] mt-2">If you would like to see more of my projects, feel free to visit my {""}
+                <p className="text-[14px] mt-2">If you would like to see more of my projects, feel free to visit my {""}
                     <a className="text-blue-600" href="https://github.com/elaheesk?tab=repositories">GitHub.</a>
                 </p>
             </div>
             <div className="mt-8">
                 <h2 className="text-xl text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
-                <div className="list-none p-0">
+                <div className="list-none p-0 text-md">
                     {certifications.map((cerificate, idx) =>
                         <div key={idx}>
                             <a

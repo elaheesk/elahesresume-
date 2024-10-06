@@ -2,7 +2,7 @@
 import { MdEmail } from "react-icons/md";
 
 
-export const intoduction = "Enthusiastic and determined Software developer with over 3 years of experience specializing in React.Proven ability to create dynamic, user-friendly applications, with a solid foundation in backend technologies like .NET and C#.Recognized for being curious, creative, and determined, as well as a strong team player who takes initiative and demonstrates responsibility in organizing work and solving tasks efficiently. I am passionate about delivering excellent customer value, with a focus on both the details and the bigger picture solving customer challenges by integrating their business logic into high-quality solutions. "
+export const intoduction = "Software developer with over 3 years of hands-on experience building interactive applications in React and a strong command of backend technologies such as .NET and C#. I thrive on dissecting complex problems and transforming ideas into efficient, scalable solutions. With a focus on delivering user-centric experiences, I balance a meticulous attention to detail with strategic thinking, ensuring that every line of code aligns with business goals. I’m driven by curiosity and a relentless desire to refine both my craft and the products I develop, turning customer needs into seamless digital solutions that drive real impact. "
 export const questions = [{
     isOpen: false,
     question: "What makes me the right candidate?",
@@ -34,8 +34,8 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 ];
 
 export const languages = ["Swedish", "English", "Persian"];
-export const technicalProjects = "<div><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
-export const technicalProjectPharmacist = "<div><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
+export const technicalProjects = "<div class='text-md'><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
+export const technicalProjectPharmacist = "<div class='text-md'><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
 export const workexperiences = [
     {
         jobTitle: "Software developer",
@@ -149,11 +149,13 @@ export const backendSkills = [
     { name: "Entity Framework", knowledgeLevel: "Good knowledge" },
     { name: "REST API", knowledgeLevel: "Great knowledge" },
     { name: "Firebase", knowledgeLevel: "Basic knowledge" },
-    { name: "MySQL", knowledgeLevel: "Basic knowledge" }
+    { name: "SQL", knowledgeLevel: "Great knowledge" }
+
 ];
 export const toolsSkills = [
     { name: "Git", knowledgeLevel: "Great knowledge" },
     { name: "GitHub", knowledgeLevel: "Great knowledge" },
+    { name: "MySQL", knowledgeLevel: "Great knowledge" },
     { name: "Azure", knowledgeLevel: "Good knowledge" },
     { name: "Unit Testing", knowledgeLevel: "Great knowledge" },
     { name: "Figma/Balsamiq", knowledgeLevel: "Great knowledge" }

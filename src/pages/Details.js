@@ -11,12 +11,11 @@ const Details = () => {
     return (
         <div className="lg:w-[1000px]  lg:justify-self-center flex flex-col">
             <div className="px-2 lg:justify-self-center">
-                <div className="flex justify-start mb-4">
+                <div className="flex justify-start mb-3">
                     <Link to="/"
                         className="text-xl
-                        font-bold
                         rounded-lg
-                        px-6 py-2
+                        px-3 py-1
                         border
                         bg-[#505476]
                         text-white
@@ -25,7 +24,7 @@ const Details = () => {
                         hover:shadow-violet-300
                         hover:shadow-lg shadow-violet-100
                         hover:text-[#505476]" >
-                        <IoIosArrowBack className="size-5 inline" />
+                        <IoIosArrowBack className="size-3 inline mb-0.5" />
                         Back
                     </Link>
                 </div>

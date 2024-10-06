@@ -114,16 +114,16 @@ li {
 
 @keyframes resume {
     0% {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         font-weight: 600;
         color: white;
-        height: 80px;
+        height: 70px;
         background-color: transparent;
     }
 
     25% {
-        font-size: 1.125rem;
-        height: 80px;
+        font-size: 0.8725rem;
+        height: 70px;
         padding: 15px;
         color: white;
         font-weight: 600;
@@ -132,9 +132,9 @@ li {
     }
 
     50% {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         padding: 15px;
-        height: 80px;
+        height: 70px;
         color: white;
         font-weight: 600;
         background-color: rgb(0, 0, 0);
@@ -142,10 +142,10 @@ li {
     }
 
     75% {
-        font-size: 1.125rem;
+        font-size: 0.875rem;
         padding: 15px;
         font-weight: 600;
-        height: 80px;
+        height: 70px;
         color: white;
         background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.5);
