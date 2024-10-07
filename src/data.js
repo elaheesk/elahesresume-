@@ -34,8 +34,8 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 ];
 
 export const languages = ["Swedish", "English", "Persian"];
-export const technicalProjects = "<div class='text-md'><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
-export const technicalProjectPharmacist = "<div class='text-md'><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
+export const technicalProjects = "<div class='text-xs'><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
+export const technicalProjectPharmacist = "<div class='text-xs'><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
 export const workexperiences = [
     {
         jobTitle: "Software developer",
@@ -97,33 +97,33 @@ export const personalDetails = [
     {
         label: 'Email',
         value: 'elahe199108@gmail.com',
-        icon: <MdEmail className="text-[#505476] size-4 mt-1" />,
+        icon: <MdEmail className="text-[#505476] size-4" />,
         link: 'mailto:elahe199108@gmail.com',
         isLink: true,
     },
     {
         label: 'Phone',
         value: '+46 738923888',
-        icon: <FaPhoneAlt className="text-[#505476] size-4 mt-2" />,
+        icon: <FaPhoneAlt className="text-[#505476] size-4 mt-1" />,
         isLink: false,
     },
     {
         label: 'Address',
         value: 'Stockholm',
-        icon: <FaHome className="text-[#505476] size-4 mt-1" />,
+        icon: <FaHome className="text-[#505476] size-4" />,
         isLink: false,
     },
     {
         label: 'LinkedIn',
         value: 'https://www.linkedin.com/in/elahe-eskandari/',
-        icon: <FaLinkedin className="text-[#505476] size-4 mt-1" />,
+        icon: <FaLinkedin className="text-[#505476] size-4" />,
         link: 'https://www.linkedin.com/in/elahe-eskandari/',
         isLink: true,
     },
     {
         label: 'Github',
         value: 'https://github.com/elaheesk?tab=repositories',
-        icon: <FaGithub className="text-[#505476] mt-1" />,
+        icon: <FaGithub className="text-[#505476]" />,
         link: 'https://github.com/elaheesk?tab=repositories',
         isLink: true,
     },

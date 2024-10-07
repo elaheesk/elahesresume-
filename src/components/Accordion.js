@@ -30,13 +30,13 @@ const Accordion = () => {
             {accordionContent.map((accordion, index) => (
                 <div
                     onClick={() => toggleAccordion(index)}
-                    className="border-solid border-2 rounded-lg bg-[#505476] text-white p-6 mt-1 hover:bg-[#20233e]"
+                    className="border-solid border-2 rounded-lg bg-[#505476] text-white p-4 mt-1 hover:bg-[#20233e]"
                     key={index}>
-                    <div className="flex justify-between text-2xl font-semibold">
+                    <div className="flex justify-between text-md font-semibold">
                         {accordion.question}
                         {accordion.isOpen ? <IoCloseSharp /> : <FaPlus />}
                     </div>
-                    <div className="accordion-answers whitespace-pre-line p-2">{accordion.isOpen ? <div
+                    <div className="accordion-answers whitespace-pre-line p-2 text-sm">{accordion.isOpen ? <div
                         dangerouslySetInnerHTML={{ __html: accordion.answer }} /> : ""}
                     </div>
                 </div>

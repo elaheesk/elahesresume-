@@ -9,11 +9,11 @@ import codeImg from '../codeImg.jpg';
 export const test = IMG_0046;
 const Details = () => {
     return (
-        <div className="lg:w-[1000px]  lg:justify-self-center flex flex-col">
+        <div className="lg:w-[793px]  lg:justify-self-center flex flex-col">
             <div className="px-2 lg:justify-self-center">
                 <div className="flex justify-start mb-3">
                     <Link to="/"
-                        className="text-xl
+                        className="text-sm
                         rounded-lg
                         px-3 py-1
                         border

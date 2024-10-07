@@ -9,7 +9,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
     };
     return (
         <div className="personal-container px-4">
-            <button className="text-2xl text-[#505476] 
+            <button className="text-md text-[#505476] 
                     font-semibold 
                     rounded-lg
                     hover:px-2
@@ -28,43 +28,43 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                                 <div
                                     onMouseLeave={() => setTooltipContent(false)}
                                     onMouseOver={() => setTooltipContent(true)}
-                                    className="font-semibold text-md">{item.label}
+                                    className="font-semibold text-xs">{item.label}
                                 </div>
                                 <p style={{ backgroundColor: tooltipContent ? "#cbccd6" : "transparent" }}
                                     className="rounded-lg ml-1 px-2 bg-[#505476]">
                                     {tooltipContent ? fixSwedishCharacters("Rödabergsgatan 9") : ''}
                                 </p>
                             </div>
-                        ) : <div className="font-semibold text-md">{item.label}</div>
+                        ) : <div className="font-semibold text-xs">{item.label}</div>
                         }
                         {item.isLink ? (
-                            <Link className="underline underline-offset-2 text-md hover:no-underline text-blue-600" to={item.link}>{item.value}</Link>
+                            <Link className="underline underline-offset-2 text-xs hover:no-underline text-blue-600" to={item.link}>{item.value}</Link>
                         ) : (
-                            <p>{item.value}</p>
+                            <p className="text-xs">{item.value}</p>
                         )}
                     </div>
                 </div>
             ))}
             <div className="mt-8">
-                <h2 className="text-xl text-[#505476] font-semibold mb-1">Languages</h2>
+                <h2 className="text-sm text-[#505476] font-semibold mb-1">Languages</h2>
                 {languages.map((language, index) =>
                     <Languages key={index} language={language} />
                 )}
             </div>
             <div className="mt-8">
-                <h2 className="text-xl text-[#505476] font-semibold mb-1">Technical Projects</h2>
+                <h2 className="text-sm text-[#505476] font-semibold mb-1">Technical Projects</h2>
                 <div className="whitespace-pre-line"
                     dangerouslySetInnerHTML={{ __html: technicalProjects }}
                 />   <div className="whitespace-pre-line mt-4"
                     dangerouslySetInnerHTML={{ __html: technicalProjectPharmacist }}
                 />
-                <p className="text-[14px] mt-2">If you would like to see more of my projects, feel free to visit my {""}
+                <p className="text-[14px] mt-2 text-xs">If you would like to see more of my projects, feel free to visit my {""}
                     <a className="text-blue-600" href="https://github.com/elaheesk?tab=repositories">GitHub.</a>
                 </p>
             </div>
             <div className="mt-8">
-                <h2 className="text-xl text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
-                <div className="list-none p-0 text-md">
+                <h2 className="text-sm text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
+                <div className="list-none p-0 text-xs">
                     {certifications.map((cerificate, idx) =>
                         <div key={idx}>
                             <a
