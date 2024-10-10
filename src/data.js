@@ -162,6 +162,10 @@ export const toolsSkills = [
 ];
 export const certifications = [
     {
+        title: "SQL Certification Course-eLearning MySQL",
+        href: "/SQL_certificate.pdf",
+    },
+    {
         title: "AI-Basic Course",
         href: "/AI_basic_course.pdf",
     }, {
