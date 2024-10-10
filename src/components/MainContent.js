@@ -17,10 +17,10 @@ const MainContent = () => {
 
     const containerClass = isExpanded ? 'text-container expanded' : 'text-container';
     return (
-        <div className="md:basis-3/4 px-4 sm:w-full"
+        <div className="md:basis-3/4 px-3 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
-            <div id="resume-description" className="rounded-lg">{resumeDescription}</div>
-            <p className="introduction-text text-xs md:p-2">{intoduction}</p>
+            <div id="resume-description" className="rounded-lg leading-normal">{resumeDescription}</div>
+            <p className="introduction-text text-xs md:pl-3 p-2">{intoduction}</p>
             <Link className="underline text-xs text-blue-600 md:px-2 pb-1
                     hover:rounded-lg
                     hover:bg-violet-200
@@ -34,21 +34,21 @@ const MainContent = () => {
                 <GiSkills className="giSkills mt-1" />
                 <h2 className="text-md font-bold text-[#505476] pl-1">Skills</h2>
             </div>
-            <div className="flex justify-between mb-2  mr-4">
-                <div className="md:pl-4">
-                    <h3 className="text-sm font-semibold mb-2">Frontend</h3>
+            <div className="flex justify-between mb-2 mr-4 mt-1">
+                <div className="md:pl-5">
+                    <h3 className="text-sm font-semibold pl-1">Frontend</h3>
                     {frontendSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold mb-2">Backend</h3>
+                    <h3 className="text-sm font-semibold">Backend</h3>
                     {backendSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold mb-2">Tools</h3>
+                    <h3 className="text-sm font-semibold">Tools</h3>
                     {toolsSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
                     ))}
@@ -57,8 +57,8 @@ const MainContent = () => {
             <hr className="mt-3"></hr>
             <div className="mt-4">
                 <div className="flex justify-start">
-                    <MdWorkHistory className="mdWorkHistory mt-1" />
-                    <h2 className="text-md font-bold text-[#505476] pl-1">Work experience</h2>
+                    <MdWorkHistory className="mdWorkHistory mt-1 mr-1" />
+                    <h2 className="text-md font-bold text-[#505476]">Work experience</h2>
                 </div>
                 {workexperiences.map((experience, index) =>
                     <JobEducationDetails key={index} title={experience.jobTitle} date={experience.date} companyOrSchool={experience?.company} companyLink={experience.companyLink} description={experience.jobDescription} />
@@ -70,22 +70,22 @@ const MainContent = () => {
                         )}
                     </div>
                 </div>
-                <button className="text-blue-600 text-sm underline md:ml-4 mt-0" onClick={toggleText}>
+                <button className="text-blue-600 text-sm underline md:ml-5 mt-0" onClick={toggleText}>
                     {isExpanded ? 'Read Less' : 'Read More'}
                 </button>
             </div>
             <hr className="mt-2"></hr>
             <div className="mt-4">
                 <div className="flex justify-start">
-                    <RiGraduationCapFill className="riGraduationCapFill pl-0 mt-1" />
-                    <h2 className="text-md font-bold text-[#505476] pl-1">Education and Qualifications</h2>
+                    <RiGraduationCapFill className="riGraduationCapFill mr-1 mt-1" />
+                    <h2 className="text-md font-bold text-[#505476]">Education and Qualifications</h2>
                 </div>
                 {educationList.map((education, index) =>
                     <JobEducationDetails key={index} title={education.title} date={education.date} companyOrSchool="" companyLink={education.school} description={education.credits} />
                 )}
             </div>
-            <h2 className="text-md font-bold text-[#505476] pl-4">References</h2>
-            <li className="pl-4 text-xs" >References available on request.</li>
+            <h2 className="text-md font-bold text-[#505476] pl-5">References</h2>
+            <li className="pl-5 text-xs" >References available on request.</li>
         </div>
     )
 }

@@ -23,7 +23,7 @@ li {
 }
 
 .img-container {
-    height: 180px;
+    height: 140px;
     background-color: #505476;
     border-radius: 40%;
     animation-name: animation;
@@ -46,7 +46,7 @@ li {
 }
 
 .text-content {
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 .text-container::after {
@@ -279,10 +279,6 @@ li {
 
 .giSkills {
     color: #505476;
-}
-
-.accordion:hover {
-    box-shadow: 20px 20px 50px 10px #505476;
 }
 
 .introduction-text:hover {

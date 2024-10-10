@@ -22,7 +22,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
             {personalDetails.map((item, index) => (
                 <div key={index} className="mt-4 flex justify-start">
                     {item.icon}
-                    <div className="pl-3">
+                    <div className="pl-2">
                         {item.label === 'Address' ? (
                             <div className="flex flex-justify-between">
                                 <div
