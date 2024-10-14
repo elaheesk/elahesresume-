@@ -9,14 +9,10 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
     };
     return (
         <div className="personal-container px-4">
-            <button className="text-md text-[#505476] 
+            <button className="text-md text-[#505476]
                     font-semibold 
                     rounded-lg
-                    hover:px-2
-                    hover:bg-violet-300
-                    hover:shadow-inner
-                    hover:shadow-violet-300
-                    hover:shadow-lg shadow-violet-100
+                    hover:underline
                     hover:text-[#505476]"
                 onClick={() => navigate("/details")}>Personal</button>
             {personalDetails.map((item, index) => (
