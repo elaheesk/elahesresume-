@@ -31,7 +31,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                                     className="font-semibold text-xs">{item.label}
                                 </div>
                                 <p style={{ backgroundColor: tooltipContent ? "#cbccd6" : "transparent" }}
-                                    className="rounded-lg ml-1 px-2 bg-[#505476]">
+                                    className="rounded-lg ml-1 px-2 bg-[#505476] text-xs">
                                     {tooltipContent ? fixSwedishCharacters("Rödabergsgatan 9") : ''}
                                 </p>
                             </div>

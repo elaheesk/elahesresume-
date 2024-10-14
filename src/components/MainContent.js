@@ -20,12 +20,12 @@ const MainContent = () => {
         <div className="md:basis-3/4 px-3 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
             <div id="resume-description" className="rounded-lg leading-normal">{resumeDescription}</div>
-            <p className="introduction-text text-xs md:pl-3 p-2">{intoduction}</p>
-            <Link className="underline text-xs text-blue-600 md:px-2 pb-1
+            <p className="text-xs md:pl-3 p-2 pb-0">{intoduction}</p>
+            <Link className="underline text-xs text-blue-600 md:px-2  pb-1 ml-1 
                     hover:rounded-lg
-                    hover:bg-violet-200
+                    hover:bg-violet-100
                     hover:shadow-inner
-                    hover:shadow-violet-300
+                    hover:shadow-violet-100
                     hover:shadow-lg shadow-violet-100
                     hover:text-[#505476]"
                 to="/details">Read more</Link>

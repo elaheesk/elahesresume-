@@ -228,36 +228,10 @@ li {
     animation-duration: 4s;
 }
 
-@keyframes boxexample {
-    0% {
-        left: 0px;
-        top: 0px;
-    }
-
-    25% {
-        left: 100px;
-        top: 0px;
-    }
-
-    50% {
-        left: 100px;
-        top: 0px;
-    }
-
-    75% {
-        left: 0px;
-        top: 0px;
-    }
-
-    100% {
-        left: 0px;
-        top: 0px;
-    }
-}
 
 .avatar:hover {
-    height: 180px;
-    width: 180px;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
 }
 
@@ -281,10 +255,6 @@ li {
     color: #505476;
 }
 
-.introduction-text:hover {
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px 10px #c8cada;
-}
 
 ul {
     list-style: none;
