@@ -1,6 +1,6 @@
 ﻿import Languages from "./Languages";
 import { Link, useNavigate } from "react-router-dom";
-import { languages, personalDetails, technicalProjects, technicalProjectPharmacist, certifications } from "../data";
+import { languages, personalDetails, certifications } from "../data";
 
 const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
@@ -46,17 +46,6 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                 {languages.map((language, index) =>
                     <Languages key={index} language={language} />
                 )}
-            </div>
-            <div className="mt-8">
-                <h2 className="text-sm text-[#505476] font-semibold mb-1">Technical Projects</h2>
-                <div className="whitespace-pre-line"
-                    dangerouslySetInnerHTML={{ __html: technicalProjects }}
-                />   <div className="whitespace-pre-line mt-4"
-                    dangerouslySetInnerHTML={{ __html: technicalProjectPharmacist }}
-                />
-                <p className="text-[14px] mt-2 text-xs">If you would like to see more of my projects, feel free to visit my {""}
-                    <a className="text-blue-600" href="https://github.com/elaheesk?tab=repositories">GitHub.</a>
-                </p>
             </div>
             <div className="mt-8">
                 <h2 className="text-sm text-[#505476] font-semibold mb-1">Licenses & certifications</h2>

@@ -34,8 +34,6 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 ];
 
 export const languages = ["Swedish", "English", "Persian"];
-export const technicalProjects = "<div class='text-xs'><span class='italic'>Interactive-Resume:</span> Developed a dynamic and responsive resume using React.js and deployed the project using Firebase. View source code on <a class='underline underline-offset-2 text-blue-600 hover:no-underline'  href='https://github.com/elaheesk/elahesresume-'>https://github.com/elaheesk/elahesresume-</a></div>"
-export const technicalProjectPharmacist = "<div class='text-xs'><span class='italic'>Your-Phmacist Web Application:</span> Created a pharmacist-focused web application two years ago using modern web development technologies and deployed it via Firebase. This project reflects my background as a pharmacist and my passion for combining healthcare with technology. <a class='text-blue-600' href='https://elahe-your-pharmacist.web.app/' >View the live project here.</a></div>";
 export const workexperiences = [
     {
         jobTitle: "Software developer",
