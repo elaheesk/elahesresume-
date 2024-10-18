@@ -49,7 +49,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
             </div>
             <div className="mt-8">
                 <h2 className="text-sm text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
-                <div className="list-none p-0 text-xs">
+                <div className="p-0 text-xs">
                     {certifications.map((cerificate, idx) =>
                         <div key={idx}>
                             <a

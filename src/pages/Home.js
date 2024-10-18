@@ -1,5 +1,5 @@
 ﻿import React, { useState, Suspense, lazy } from "react"; 
-import img0046 from '../IMG_0046.JPG';
+import img0047 from '../IMG_0047.png';
 const SideBar = lazy(() => import('../components/SideBar'));
 const MainContent = lazy(() => import('../components/MainContent'));
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
                     <div className="flex flex-col gap-20">
                         <div className="img-container">
                             <div className="heading-container grid justify-items-stretch">
-                                <h1 className="text-xl font-semibold justify-self-center text-white px-4 mt-3">Elahe Eskandari</h1>
-                                <img src={img0046} alt="avatar" className="avatar px-4 justify-self-center mt-8" />
+                                <h1 className="text-xl font-semibold justify-self-center text-white px-4 mt-4">Elahe Eskandari</h1>
+                                <img src={img0047} alt="avatar" className="avatar px-4 justify-self-center mt-8" />
                             </div>
                         </div>
                         <Suspense fallback={<div>Loading…</div>}>

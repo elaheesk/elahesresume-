@@ -1,17 +1,23 @@
-const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, description }) => {
+const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, description, jobDescriptionBulletPoint=[] }) => {
+    const filteredBulletPoints = jobDescriptionBulletPoint.filter((point) => point.trim() !== "");
     return (
-        <li className="mb-3 md:pl-5">
-        <div className="flex justify-between">
-                <h3 className="text-sm font-semibold">{title}</h3>
-                <div className="text-sm">{date}</div>
+        <div className="mb-3 md:pl-1">
+            <div className="flex justify-between">
+                <h3 className="text-sm font-semibold mt-2">{title}</h3>
+                <div className="text-sm mt-2">{date}</div>
+            </div>
+                <div className="text-[#505476] text-sm">{companyOrSchool}</div>
+            {description && (
+                <div className="text-xs leading-normal mt-2" dangerouslySetInnerHTML={{ __html: description }} />
+            )}
+            {filteredBulletPoints.length > 0 && (
+                <ul className="list-disc ml-3 mt-2">
+                    {filteredBulletPoints.map((eachTask, index) => (
+                        <li key={index} className="text-xs" dangerouslySetInnerHTML={{ __html: eachTask }} />
+                    ))}
+                </ul>
+            )}
         </div>
-        {companyLink !== "" ? <a className="text-[#505476] text-sm hover:underline" href={companyOrSchool}>{companyOrSchool}</a>
-            : <div className="text-[#505476] text-sm">{companyOrSchool}</div>
-            }
-            <div className="text-xs leading-normal"
-            dangerouslySetInnerHTML={{ __html: description }}
-        />
-        </li>
     )
 }
 export default JobEducationDetails;

@@ -2,7 +2,7 @@
 import { MdEmail } from "react-icons/md";
 
 
-export const intoduction = "Software developer with over 3 years of hands-on experience building interactive applications in React and a strong command of backend technologies such as .NET and C#. I thrive on dissecting complex problems and transforming ideas into efficient, scalable solutions. With a focus on delivering user-centric experiences, I balance a meticulous attention to detail with strategic thinking, ensuring that every line of code aligns with business goals. I’m driven by curiosity and a relentless desire to refine both my craft and the products I develop, turning customer needs into seamless digital solutions that drive real impact. "
+export const intoduction = "Experienced software developer with 3+ years building interactive applications using React.js and strong backend skills in .NET and C#. I specialize in creating user-friendly, scalable solutions that align with business goals and focus on making customers happy. Passionate about solving problems and refining my craft to deliver impactful digital experiences. "
 export const questions = [{
     isOpen: false,
     question: "What makes me the right candidate?",
@@ -40,8 +40,17 @@ export const workexperiences = [
         date: "Jan 2023 - Present",
         company: "Tietoevry Tech Services, Solna",
         companyLink: "https://www.tietoevry.com/",
-        jobDescription: "<div>I have developed both external and internal e‑services for the City of Stockholm with varying levels of complexity. I have worked on existing services and been involved in building new ones, in total around 10 e-services which can be found at <a class='underline underline-offset-2 hover:no-underline text-blue-600' href='https://start.stockholm/e-tjanster/'>Start.Stockholm/e-tjanster</a>. Although I have more expertise in frontend than backend, I have also developed extensively in both backend and frontend and have been part of the process throughout the project's lifecycle, from the pre‑study phase, requirements management, and test case creation to development and maintenance. Based on UX design sketches, I have contributed to implementing the frontend, writing code, and continuously collaborating closely with UX to ensure accessibility from the sketch stage and to ensure alignment with the Web Manual, which contains the current guidelines for all of Stockholm's e‑services. My role has also included significant accessibility aspects, such as ongoing quality assurance and accessibility testing of individual components.</div>"
-
+        jobDescription: "",
+        jobDescriptionBulletPoint: [
+            "Developed external and internal e-services for the City of Stockholm with varying levels of complexity.",
+            "Worked on both existing services and new ones, totaling around 10 e-services (available at Start.Stockholm/e-tjanster)",
+            "Involved throughout the project's lifecycle, including: <li class='ml-3'>Pre - study phase</li><li class='ml-3'>Requirements management</li><li class='ml-3'>Test case creation</li> <li class='ml-3'>Development and maintenance</li>",
+            "Implemented frontend based on UX design sketches, ensuring alignment with UX guidelines.",
+            "Expertise in frontend development, but also contributed extensively to backend development.",
+            "Collaborated closely with UX to ensure accessibility from the sketch stage.",
+            "Adhered to the Web Manual, following guidelines for Stockholm's e-services.",
+            "Conducted ongoing quality assurance and accessibility testing of individual components."
+        ]
     },
     {
         jobTitle: "Frontend-developer",
@@ -56,6 +65,7 @@ export const workexperiences = [
         company: "Traders Alloy, Stockholm",
         companyLink: "",
         jobDescription: "Worked on developing the portfolio functionality and writing unit tests for it. Switching from backend and frontend using Vue.js, Node.js and PostgreSQL."
+       
     },
 
 ];
@@ -72,22 +82,20 @@ export const previousWorkexperiences = [{
     company: "Lloyds (Doz), Sweden",
     companyLink: "",
     jobDescription: "Worked at different pharmacies around the country. The job demanded flexibility, problem solving mentality, genuine curiosity, commitment and an appreciation for diversity of different kind of colleagues and customers."
+
 }]
 export const educationList = [
     {
-        title: "Ec Education Frontend developer",
+        title: "Ec Education Frontend developer, Helsingborg",
         date: "Aug 2021 - Feb 2022",
-        school: "Ec Education Helsingborg, Helsingborg",
         credits: "120 Credits"
     }, {
-        title: "Course in Macroeconomics",
+        title: "Course in Macroeconomics, Lund",
         date: "Sep 2016 - Dec 2016",
-        school: "Lund University, Lund",
         credits: "30 Credits"
     }, {
-        title: "Bachelor of Science in Pharmacy",
+        title: "Bachelor of Science in Pharmacy, Uppsala University",
         date: "Aug 2011 - Jun 2014",
-        school: "Uppsala University, Uppsala",
         credits: "180 Credits"
     }
 ]

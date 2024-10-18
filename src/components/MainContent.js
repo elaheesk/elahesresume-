@@ -20,16 +20,16 @@ const MainContent = () => {
         <div className="md:basis-3/4 px-3 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
             <div id="resume-description" className="rounded-lg leading-normal">{resumeDescription}</div>
-            <p className="text-xs md:pl-3 p-2 pb-0">{intoduction}</p>
-            <Link className="glow-on-hover text-xs text-blue-600 md:px-2  pb-1 ml-1 underline"
-                to="/details">Read more</Link>
+            <p className="text-xs md:pl-1 p-2 pb-0">{intoduction}</p>
+            <Link className="text-xs text-blue-600 md:px-2 md:pl-1 pb-1 underline hover:no-underline"
+                to="/details">Click here to read more</Link>
             <hr className="mt-2"></hr>
             <div className="flex justify-start mt-2">
-                <GiSkills className="giSkills mt-1" />
+                <GiSkills className="giSkills" />
                 <h2 className="text-md font-bold text-[#505476] pl-1">Skills</h2>
             </div>
             <div className="flex justify-between mb-2 mr-4 mt-1">
-                <div className="md:pl-5">
+                <div>
                     <h3 className="text-sm font-semibold pl-1">Frontend</h3>
                     {frontendSkills.map((skill, index) => (
                         <Skills key={index} skill={skill} />
@@ -51,11 +51,11 @@ const MainContent = () => {
             <hr className="mt-3"></hr>
             <div className="mt-4">
                 <div className="flex justify-start">
-                    <MdWorkHistory className="mdWorkHistory mt-1 mr-1" />
+                    <MdWorkHistory className="mdWorkHistory mr-1" />
                     <h2 className="text-md font-bold text-[#505476]">Work experience</h2>
                 </div>
                 {workexperiences.map((experience, index) =>
-                    <JobEducationDetails key={index} title={experience.jobTitle} date={experience.date} companyOrSchool={experience?.company} companyLink={experience.companyLink} description={experience.jobDescription} />
+                    <JobEducationDetails key={index} title={experience.jobTitle} date={experience.date} companyOrSchool={experience?.company} companyLink={experience.companyLink} description={experience.jobDescription || null} jobDescriptionBulletPoint={experience.jobDescriptionBulletPoint || [""]} />
                 )}
                 <div className={containerClass}>
                     <div className="text-content">
@@ -64,22 +64,22 @@ const MainContent = () => {
                         )}
                     </div>
                 </div>
-                <button className="text-blue-600 text-sm underline md:ml-5 mt-0" onClick={toggleText}>
+                <button className="text-blue-600 text-sm underline md:ml-1 mt-0" onClick={toggleText}>
                     {isExpanded ? 'Read Less' : 'Read More'}
                 </button>
             </div>
             <hr className="mt-2"></hr>
             <div className="mt-4">
                 <div className="flex justify-start">
-                    <RiGraduationCapFill className="riGraduationCapFill mr-1 mt-1" />
+                    <RiGraduationCapFill className="riGraduationCapFill mr-1" />
                     <h2 className="text-md font-bold text-[#505476]">Education and Qualifications</h2>
                 </div>
                 {educationList.map((education, index) =>
-                    <JobEducationDetails key={index} title={education.title} date={education.date} companyOrSchool="" companyLink={education.school} description={education.credits} />
+                    <JobEducationDetails key={index} title={education.title} date={education.date} companyOrSchool="" description={education.credits} />
                 )}
             </div>
-            <h2 className="text-md font-bold text-[#505476] pl-5">References</h2>
-            <li className="pl-5 text-xs" >References available on request.</li>
+            <h2 className="text-md font-bold text-[#505476] pl-1">References</h2>
+            <p className="pl-1 text-xs" >References available on request.</p>
         </div>
     )
 }
