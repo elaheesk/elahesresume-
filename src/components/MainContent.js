@@ -5,6 +5,8 @@ import { MdWorkHistory } from "react-icons/md";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { GiSkills } from "react-icons/gi";
 import JobEducationDetails from "../components/JobEducationDetails";
+import LikeButton from "../components/LikeButton";
+
 import { intoduction, workexperiences, educationList, frontendSkills, backendSkills, toolsSkills, previousWorkexperiences, resumeDescription } from "../data";
 
 const MainContent = () => {

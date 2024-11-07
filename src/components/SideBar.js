@@ -1,12 +1,14 @@
 ﻿import Languages from "./Languages";
 import { Link, useNavigate } from "react-router-dom";
 import { languages, personalDetails, certifications } from "../data";
+import Form from "../components/Form";
 
 const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
     const fixSwedishCharacters = (text) => {
         return text.replace(/ö/g, 'ö').replace(/ä/g, 'ä').replace(/å/g, 'å');
     };
+
     return (
         <div className="personal-container px-4">
             <button className="text-md text-[#505476]
@@ -62,6 +64,9 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                         </div>
                     )}
                 </div>
+            </div>
+            <div className="mt-8">
+                <Form />
             </div>
         </div>
     )
