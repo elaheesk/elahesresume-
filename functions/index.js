@@ -20,8 +20,8 @@ exports.sendEmailNotification = functions.firestore
     .onCreate((snap, context) => {
         const data = snap.data();
         const mailOptions = {
-            from: "your-email@gmail.com",
-            to: "your-email@gmail.com", // Email where you want to receive notifications
+            from: process.env.EMAIL_USER,
+            to: process.env.EMAIL_USER, // Email where you want to receive notifications
             subject: `New Contact Request from ${data.name}`,
             text: `Message from ${data.name} (${data.email}): ${data.message}`,
         };
