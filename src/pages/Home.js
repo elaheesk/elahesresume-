@@ -2,6 +2,7 @@
 import img0047 from '../IMG_0047.png';
 const SideBar = lazy(() => import('../components/SideBar'));
 const MainContent = lazy(() => import('../components/MainContent'));
+
 const Home = () => {
     const [tooltipContent, setTooltipContent] = useState(false);
     return (

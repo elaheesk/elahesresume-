@@ -18,13 +18,13 @@ const Accordion = () => {
                 return accordion;
             }
         });
-
         setAccordionContent(updatedAccordion);
     }
 
     useEffect(() => {
         setAccordionContent(questions);
     }, [])
+
     return (
         <div className="accordion mt-6 mb-8">
             {accordionContent.map((accordion, index) => (
@@ -42,8 +42,8 @@ const Accordion = () => {
                         style={{
                             maxHeight: accordion.isOpen ? "500px" : "0px",
                             transition: accordion.isOpen
-                                ? "max-height 1.5s ease-in-out" 
-                                : "max-height 0.5s ease-in-out", 
+                                ? "max-height 1.5s ease-in-out"
+                                : "max-height 0.5s ease-in-out",
                         }}
                     >
                         <div

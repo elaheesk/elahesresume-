@@ -1,4 +1,4 @@
-export const validations = {
+﻿export const validations = {
     name: (value) => ({
         isValid: /^[0-9A-Za-z\s]{3,16}$/.test(value),
         error: "Enter a valid username",
@@ -11,4 +11,8 @@ export const validations = {
         isValid: value.trim() !== "",
         error: "Please fill in the empty field",
     }),
+};
+
+export const fixSwedishCharacters = (text) => {
+    return text.replace(/ö/g, 'ö').replace(/ä/g, 'ä').replace(/å/g, 'å');
 };

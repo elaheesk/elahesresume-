@@ -185,3 +185,8 @@ export const certifications = [
     }
 ]
 export const resumeDescription = "This resume is custom-built by me using React, showcasing my ability to independently develop responsive and dynamic web applications."
+export const emptyFormData = {
+    name: { value: "", hasError: false, touched: false },
+    email: { value: "", hasError: false, touched: false },
+    message: { value: "", hasError: false, touched: false },
+} 

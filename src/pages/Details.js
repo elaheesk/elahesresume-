@@ -6,6 +6,7 @@ import img0051 from '../IMG_0051.jpg';
 import img7398 from '../IMG_7398.jpg';
 import codeImg from '../codeImg.jpg';
 const Details = () => {
+    const images = [img0046, img0051, img7398, codeImg];
     return (
         <div className="lg:w-[793px]  lg:justify-self-center flex flex-col">
             <div className="px-2 lg:justify-self-center">
@@ -27,15 +28,16 @@ const Details = () => {
                     </Link>
                 </div>
                 <ul className="imgOfMe">
-                    <li style={{ backgroundImage: `url(${img0046})` }}></li>
-                    <li style={{ backgroundImage: `url(${img0051})` }}></li>
-                    <li style={{ backgroundImage: `url(${img7398})` }}></li>
-                    <li style={{ backgroundImage: `url(${codeImg})` }}></li>
+                    {images.map((src, index) => (
+                        <li
+                            key={index}
+                            style={{ backgroundImage: `url(${src})` }}
+                        ></li>
+                    ))}
                 </ul>
             </div>
             <Accordion />
         </div>
-
     )
 }
 export default Details;

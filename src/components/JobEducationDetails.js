@@ -1,4 +1,4 @@
-const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, description, jobDescriptionBulletPoint=[] }) => {
+const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, description, jobDescriptionBulletPoint = [] }) => {
     const filteredBulletPoints = jobDescriptionBulletPoint.filter((point) => point.trim() !== "");
     return (
         <div className="mb-3 md:pl-1">
@@ -6,7 +6,17 @@ const JobEducationDetails = ({ date, title, companyOrSchool, companyLink, descri
                 <h3 className="text-sm font-semibold mt-2">{title}</h3>
                 <div className="text-sm mt-2">{date}</div>
             </div>
-                <div className="text-[#505476] text-sm">{companyOrSchool}</div>
+            {companyOrSchool !== "" &&
+                <div className="text-[#505476] text-sm"
+                    onClick={
+                        companyLink
+                            ? () => window.open(companyLink, "_blank")
+                            : undefined
+                    }
+                    style={{ cursor: companyLink ? "pointer" : "default" }}
+                >
+                    {companyOrSchool}
+                </div>}
             {description && (
                 <div className="text-xs leading-normal mt-2" dangerouslySetInnerHTML={{ __html: description }} />
             )}

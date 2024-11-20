@@ -1,13 +1,11 @@
 ﻿import Languages from "./Languages";
 import { Link, useNavigate } from "react-router-dom";
 import { languages, personalDetails, certifications } from "../data";
+import { fixSwedishCharacters } from "../ValidationFunctions";
 import Form from "../components/Form";
 
 const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
-    const fixSwedishCharacters = (text) => {
-        return text.replace(/ö/g, 'ö').replace(/ä/g, 'ä').replace(/å/g, 'å');
-    };
 
     return (
         <div className="personal-container px-4">
