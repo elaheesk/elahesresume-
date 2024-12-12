@@ -34,7 +34,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                         ) : <div className="font-semibold text-xs">{item.label}</div>
                         }
                         {item.isLink ? (
-                            <Link className="underline underline-offset-2 text-xs hover:no-underline text-blue-600" to={item.link}>{item.value}</Link>
+                            <a className="underline underline-offset-2 text-xs hover:no-underline text-blue-600" href={item.link} target="_blank" rel="noreferrer" >{item.value}</a>
                         ) : (
                             <p className="text-xs">{item.value}</p>
                         )}

@@ -2,7 +2,7 @@
 import { MdEmail } from "react-icons/md";
 
 
-export const intoduction = "Experienced software developer with 3+ years building interactive applications using React.js and strong backend skills in .NET and C#. I specialize in creating user-friendly, scalable solutions that align with business goals and focus on making customers happy. Passionate about solving problems and refining my craft to deliver impactful digital experiences. "
+export const intoduction = "Experienced software developer with 3+ years building interactive applications using React.js and strong backend skills in .NET and C#. I specialize in creating user-friendly, scalable solutions that align with business goals and focus on making customers happy.  Proficient in implementing WCAG 2.2 standards, ensuring inclusive and accessible digital experiences for all users. Passionate about solving problems and refining my craft to deliver impactful digital experiences. "
 export const questions = [{
     isOpen: false,
     question: "What makes me the right candidate?",
@@ -46,6 +46,7 @@ export const workexperiences = [
             "Worked on both existing services and new ones, totaling around 10 e-services (available at Start.Stockholm/e-tjanster)",
             "Involved throughout the project's lifecycle, including: <li class='ml-3'>Pre - study phase</li><li class='ml-3'>Requirements management</li><li class='ml-3'>Test case creation</li> <li class='ml-3'>Development and maintenance</li>",
             "Implemented frontend based on UX design sketches, ensuring alignment with UX guidelines.",
+            "Implemented WCAG 2.2 standards to ensure accessibility and inclusion",
             "Expertise in frontend development, but also contributed extensively to backend development.",
             "Collaborated closely with UX to ensure accessibility from the sketch stage.",
             "Adhered to the Web Manual, following guidelines for Stockholm's e-services.",
@@ -57,7 +58,7 @@ export const workexperiences = [
         date: "Apr 2022 - Dec 2022",
         company: "Hopen, Stockholm",
         companyLink: "https://hopen.se/",
-        jobDescription: "I have been building the Hopen platform from the start until we went live. The framework we used was React with typescript to build new features as well as maintaining and improving existing code bases. I have also written unit tests (using Jest) for our code. The whole frontend work was done by me and my collauge. We worked agile in two‑week sprints and used Jira as a tool to manage project. The platform is available at <a class='underline underline-offset-2 hover:no-underline text-blue-600' href='https://hopen.se/'>hopen.se</a></div>"
+        jobDescription: "I had the privilege of being part of a startup team where we built the Hopen platform from the ground up until it got launched. Using React with TypeScript, I worked on developing new features as well as maintaining and improving existing codebases.I also wrote unit tests using Jest to ensure code quality and reliability. As part of a small, dynamic team, the entire frontend development was handled by me and my colleague.We followed agile methodologies with two - week sprints, utilizing Jira to effectively manage tasks and track project progress. Working in a startup environment taught me the importance of collaboration, adaptability, and delivering results in a fast- paced setting."
     },
     {
         jobTitle: "Full-stack developer intern",
@@ -140,6 +141,7 @@ export const frontendSkills = [
     { name: "Jquery", knowledgeLevel: "Great knowledge" },
     { name: "React (Redux/useContext)", knowledgeLevel: "Great knowledge" },
     { name: "React Native", knowledgeLevel: "Great knowledge" },
+    { name: "NextJS", knowledgeLevel: "Great knowledge" },
     { name: "TypeScript", knowledgeLevel: "Great knowledge" },
     { name: "Vue.js", knowledgeLevel: "Great knowledge" },
     { name: "HTML5/CSS3", knowledgeLevel: "Great knowledge" },
