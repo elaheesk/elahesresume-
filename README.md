@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+Personal CV Website
+Description: This is a personal CV website built with React and deployed using Firebase Hosting. It showcases my skills, experience, projects, and contact information. Firestore is used as a backend database for storing dynamic content like projects and contact form submissions.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+About Me: A detailed introduction in Details page, including my qualities.
+Projects: A dynamically loaded portfolio of projects using Firestore.
+Contact Form: A form for visitors to send messages, with submissions saved in Firestore.
+Responsive Design: Optimized for desktop, tablet, and mobile devices.
 
-## Available Scripts
+Firebase Integration:
+Firestore: To store and retrieve project data and contact form submissions.
+Firebase Hosting: For deploying the application.
 
-In the project directory, you can run:
+Technologies Used
+*Frontend: React
+*Styling:Tailwind CSS
+*Backend: Firebase Firestore
+*Deployment: Firebase Hosting
 
-### `npm start`
+View the Live Project
+You can view the live version of the project without any setup:
+Live URL:  https://elahes-resume-react.web.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Running the Project Locally
+Getting Started
+To run this project locally, ensure you have the following:
+*Node.js
+*npm or yarn
+*A Firebase project set up in the Firebase Console.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Setup and Run Locally
+1. Clone this repository: git clone https://github.com/elaheesk/elahesresume-.git
+2. Navigate to the project folder: elahesresume-
+3. Install dependencies: npm install
 
-### `npm test`
+4.Set up Firebase:
+If you want to use Firebase locally, create a Firebase project in the Firebase Console.
+Create a .env file in the root of your project and add your Firebase configuration:
+Replace your Firebase configuration in .env with your own
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
 
-### `npm run build`
+5. Start the development server: npm start
+6. Open your browser at http://localhost:3000.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Deployment to Firebase Hosting
+The application is deployed using Firebase Hosting. To deploy the project:
+1. Install Firebase CLI: npm install -g firebase-tools
+2. Login to Firebase:firebase login
+3. Initialize Firebase in the project:firebase init and then select Hosting and configure the build folder (e.g., build).
+4. Build the project: npm run build
+5. Deploy to Firebase: firebase deploy
+6. Your application will be available at the Firebase Hosting URL.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
