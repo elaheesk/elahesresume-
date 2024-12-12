@@ -41,6 +41,7 @@ const FormField = ({
                 />
             )}
             {touched && hasError && <div style={{ color: "red" }}>{errorMessage}</div>}
-        </div>)
+        </div>
+    )
 }
 export default FormField;

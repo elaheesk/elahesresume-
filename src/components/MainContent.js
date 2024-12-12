@@ -5,8 +5,6 @@ import { MdWorkHistory } from "react-icons/md";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { GiSkills } from "react-icons/gi";
 import JobEducationDetails from "../components/JobEducationDetails";
-import LikeButton from "../components/LikeButton";
-
 import { intoduction, workexperiences, educationList, frontendSkills, backendSkills, toolsSkills, previousWorkexperiences, resumeDescription } from "../data";
 
 const MainContent = () => {
@@ -22,9 +20,9 @@ const MainContent = () => {
         <div className="md:basis-3/4 px-3 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
             <div id="resume-description" className="rounded-lg leading-normal">{resumeDescription}</div>
-            <p className="text-xs md:pl-1 p-2 pb-0">{intoduction}</p>
-            <Link className="text-xs text-blue-600 md:px-2 md:pl-1 pb-1 underline hover:no-underline"
-                to="/details">Click here to read more</Link>
+            <div className="text-xs md:pl-1 p-2 pb-0">{intoduction}<Link className="text-blue-600  hover:underline"
+                to="/details">Read more</Link>
+            </div>
             <hr className="mt-2"></hr>
             <div className="flex justify-start mt-2">
                 <GiSkills className="giSkills" />

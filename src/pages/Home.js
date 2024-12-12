@@ -1,5 +1,6 @@
 ﻿import React, { useState, Suspense, lazy } from "react"; 
 import img0047 from '../IMG_0047.png';
+import Footer from "../components/Footer";
 const SideBar = lazy(() => import('../components/SideBar'));
 const MainContent = lazy(() => import('../components/MainContent'));
 
@@ -25,6 +26,7 @@ const Home = () => {
                     <MainContent />
                 </Suspense>
             </div>
+            <Footer />
         </div>
     )
 }

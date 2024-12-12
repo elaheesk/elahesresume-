@@ -10,7 +10,7 @@ function App() {
                 <Route path="/Details" element={<Details />} />
                 <Route path="/" element={<Home />} />
             </Routes>
-        </div >
+        </div>
     );
 }
 export default App;

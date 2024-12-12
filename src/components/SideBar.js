@@ -1,5 +1,5 @@
 ﻿import Languages from "./Languages";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { languages, personalDetails, certifications } from "../data";
 import { fixSwedishCharacters } from "../ValidationFunctions";
 import Form from "../components/Form";
@@ -7,7 +7,7 @@ import Form from "../components/Form";
 const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
 
-    return (
+    return(
         <div className="personal-container px-4">
             <button className="text-md text-[#505476]
                     font-semibold 
@@ -18,7 +18,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
             {personalDetails.map((item, index) => (
                 <div key={index} className="mt-4 flex justify-start">
                     {item.icon}
-                    <div className="pl-2">
+                    <div className="pl-2 mb-2 leading-[0.825rem]">
                         {item.label === 'Address' ? (
                             <div className="flex flex-justify-between">
                                 <div
@@ -34,7 +34,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                         ) : <div className="font-semibold text-xs">{item.label}</div>
                         }
                         {item.isLink ? (
-                            <a className="underline underline-offset-2 text-xs hover:no-underline text-blue-600" href={item.link} target="_blank" rel="noreferrer" >{item.value}</a>
+                            <a className="underline underline-offset-2  text-xs hover:no-underline text-blue-600" href={item.link} target="_blank" rel="noreferrer" >{item.value}vad är detta</a>
                         ) : (
                             <p className="text-xs">{item.value}</p>
                         )}
