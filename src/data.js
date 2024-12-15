@@ -1,8 +1,4 @@
-﻿import { FaPhoneAlt, FaLinkedin, FaGithub, FaHome } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-
-
-export const intoduction = "Experienced software developer with 3+ years building interactive applications using React.js and strong backend skills in .NET and C#. I specialize in creating user-friendly, scalable solutions that align with business goals and focus on making customers happy.  Proficient in implementing WCAG 2.2 standards, ensuring inclusive and accessible digital experiences for all users. Passionate about solving problems and refining my craft to deliver impactful digital experiences. "
+﻿export const intoduction = "Experienced software developer with 3+ years building interactive applications using React.js and strong backend skills in .NET and C#. I specialize in creating user-friendly, scalable solutions that align with business goals and focus on making customers happy.  Proficient in implementing WCAG 2.2 standards, ensuring inclusive and accessible digital experiences for all users. Passionate about solving problems and refining my craft to deliver impactful digital experiences. "
 export const questions = [{
     isOpen: false,
     question: "What makes me the right candidate?",
@@ -104,33 +100,28 @@ export const personalDetails = [
     {
         label: 'Email',
         value: 'elahe199108@gmail.com',
-        icon: <MdEmail className="text-[#505476] size-4" />,
         link: 'mailto:elahe199108@gmail.com',
         isLink: true,
     },
     {
         label: 'Phone',
         value: '+46 738923888',
-        icon: <FaPhoneAlt className="text-[#505476] size-4 mt-1" />,
         isLink: false,
     },
     {
         label: 'Address',
         value: 'Stockholm',
-        icon: <FaHome className="text-[#505476] size-4" />,
         isLink: false,
     },
     {
         label: 'LinkedIn',
         value: 'https://www.linkedin.com/in/elahe-eskandari/',
-        icon: <FaLinkedin className="text-[#505476] size-4" />,
         link: 'https://www.linkedin.com/in/elahe-eskandari/',
         isLink: true,
     },
     {
         label: 'Github',
         value: 'https://github.com/elaheesk?tab=repositories',
-        icon: <FaGithub className="text-[#505476]" />,
         link: 'https://github.com/elaheesk?tab=repositories',
         isLink: true,
     },

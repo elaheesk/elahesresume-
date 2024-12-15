@@ -5,10 +5,10 @@ function App() {
   
     return (
         <div className="pt-4 grid justify-items-stretch">
-            <Link to="/"></Link>
             <Routes>
-                <Route path="/Details" element={<Details />} />
                 <Route path="/" element={<Home />} />
+                <Route path="/details" element={<Details />} />
+                <Route path="*" element={<div>Page Not Found</div>} />
             </Routes>
         </div>
     );

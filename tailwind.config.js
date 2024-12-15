@@ -5,7 +5,13 @@ module.exports = {
         extend: {
             blur: {
                 xs: '1px',
-            }
+            },
+            fontFamily: {
+                inter: ['Inter', 'sans-serif'],
+            },
+            colors: {
+                lightGray: '#e9e9e9',
+            },
         },
         screens: {
             'xs': '375px',
@@ -29,7 +35,7 @@ module.exports = {
             // => @media (min-width: 1536px) { ... }
         },
         fontSize: {
-            'xs': '0.625rem',
+            'xs': '0.645rem',
             'sm': '0.75rem',
             'md': '0.875rem',
             'xl': '1rem',

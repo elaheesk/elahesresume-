@@ -1,7 +1,7 @@
 import { FaCircle } from "react-icons/fa";
 const Languages = ({ language }) => {
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between leading-[0.815rem]">
             <div className="tooltip relative pl-0 block bg-gradient-to-l from-rgba(2,2,2,0.04) white
                   mb-1 p-1 rounded-lg text-xs">
                 {language}

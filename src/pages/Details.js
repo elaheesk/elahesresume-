@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { IoIosArrowBack } from "react-icons/io";
 import Accordion from "../components/Accordion";
 import img0046 from '../IMG_0046.JPG';
 import img0051 from '../IMG_0051.jpg';
@@ -11,19 +10,10 @@ const Details = () => {
         <div className="lg:w-[793px]  lg:justify-self-center flex flex-col">
             <div className="px-2 lg:justify-self-center">
                 <div className="flex justify-start mb-3">
-                    <Link to="/"
-                        className="text-sm
-                        rounded-lg
-                        px-3 py-1
-                        border
-                        bg-[#505476]
-                        text-white
-                        hover:bg-violet-300
-                        hover:shadow-inner
-                        hover:shadow-violet-300
-                        hover:shadow-lg shadow-violet-100
-                        hover:text-[#505476]" >
-                        <IoIosArrowBack className="size-3 inline mb-0.5" />
+                    <Link to="/" className="inline-flex items-center px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-medium rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                        </svg>
                         Back
                     </Link>
                 </div>
