@@ -25,7 +25,7 @@ I enjoy the rational and structured aspects of programming, as well as the conti
 {
     isOpen: false,
     question: "How do I spend my freetime?",
-    answer: "<div>In my free time, I enjoy watching documentaries and spending quality time with my family, friends, and my twin sister. I also love socializing over dinners with friends, and I have a strong passion for traveling and exploring new places. In addition, I occasionally work on personal coding projects, including the resume you are currently reading as well as <a class='underline underline-offset-2 text-blue-600'  href='https://you-phmacist.web.app/'>https://you-phmacist.web.app/</a></div> ",
+    answer: "<div>In my free time, I enjoy watching documentaries and spending quality time with my family, friends, and my twin sister. I also love socializing over dinners with friends, and I have a strong passion for traveling and exploring new places. In addition, I occasionally work on personal coding projects, including the resume you are currently reading as well as <a class='underline underline-offset-2 text-blue-600'  href='https://you-phmacist.web.app/'>https://react-typescript-firebas-2b5f2.web.app/</a></div> ",
 }
 ];
 
@@ -62,7 +62,7 @@ export const workexperiences = [
         company: "Traders Alloy, Stockholm",
         companyLink: "",
         jobDescription: "Worked on developing the portfolio functionality and writing unit tests for it. Switching from backend and frontend using Vue.js, Node.js and PostgreSQL."
-       
+
     },
 
 ];
@@ -147,8 +147,12 @@ export const backendSkills = [
     { name: "ASP.Net MVC", knowledgeLevel: "Good knowledge" },
     { name: "Entity Framework", knowledgeLevel: "Good knowledge" },
     { name: "REST API", knowledgeLevel: "Great knowledge" },
+    { name: "NODE", knowledgeLevel: "Great knowledge" },
+    { name: "SQL", knowledgeLevel: "Great knowledge" },
+    { name: "PostgreSQL", knowledgeLevel: "Great knowledge" },
     { name: "Firebase", knowledgeLevel: "Basic knowledge" },
-    { name: "SQL", knowledgeLevel: "Great knowledge" }
+
+
 
 ];
 export const toolsSkills = [

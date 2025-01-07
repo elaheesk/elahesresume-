@@ -8,7 +8,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
 
     return(
-        <div className="personal-container px-4">
+        <div className="personal-container px-4 mt-6">
             <button className=" text-[#505476]
                     font-bold 
                     rounded-lg

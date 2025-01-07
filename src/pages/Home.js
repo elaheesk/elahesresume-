@@ -15,6 +15,7 @@ const Home = () => {
                             <div className="img-container">
                                 <div className="heading-container grid justify-items-stretch">
                                     <h1 className="text-xl font-inter font-semibold justify-self-center text-white px-4 mt-4">Elahe Eskandari</h1>
+                                    <h2 className="justify-self-center text-white text-sm">Software Developer</h2>
                                     <img src={img0047} alt="avatar" className="avatar px-4 justify-self-center mt-8" />
                                 </div>
                             </div>
