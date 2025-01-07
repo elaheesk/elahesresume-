@@ -159,6 +159,7 @@ export const toolsSkills = [
     { name: "Git", knowledgeLevel: "Great knowledge" },
     { name: "GitHub", knowledgeLevel: "Great knowledge" },
     { name: "MySQL", knowledgeLevel: "Great knowledge" },
+    { name: "Express", knowledgeLevel: "Great knowledge" },
     { name: "Azure", knowledgeLevel: "Good knowledge" },
     { name: "Unit Testing", knowledgeLevel: "Great knowledge" }
 ];
