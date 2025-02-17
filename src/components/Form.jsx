@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { validations } from "../ValidationFunctions";
-import { emptyFormData } from "../data";
+import { validations } from "../utils/validations";
+import { emptyFormData, formFields } from "../data/formData";
 import { collection, addDoc } from "firebase/firestore";
 import FormField from "./FormField";
 import { db } from "../firebase";
@@ -11,14 +11,15 @@ const Form = () => {
     const [status, setStatus] = useState("");
     const [isExpanded, setIsExpanded] = useState(false);
 
+    const isFormValid = Object.values(formData).every(
+        (input) => !input.hasError && input.touched
+    );
+
     const handleExpandForm = () => {
         setIsExpanded(true)
     };
-    const handleCloseForm = () => {
-        const isFormValid = Object.values(formData).every(
-            (input) => !input.hasError && input.touched
-        );
 
+    const handleCloseForm = () => {
         if (!isFormValid) {
             setFormData(emptyFormData);
         }
@@ -37,16 +38,20 @@ const Form = () => {
         }));
     };
 
+    const validateField = (name, value) => {
+        const { isValid, error } = validations[name](value);
+        return { hasError: !isValid, errorMessage: isValid ? "" : error };
+    };
+
     const blurHandler = (e) => {
         const { name, value } = e.target;
-        const { isValid, error } = validations[name](value);
+        const validationResult = validateField(name, value);
 
         setFormData((prevForm) => ({
             ...prevForm,
             [name]: {
                 ...prevForm[name],
-                hasError: !isValid,
-                errorMessage: isValid ? "" : error,
+                ...validationResult,
                 touched: true,
             },
         }));
@@ -54,9 +59,6 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const isFormValid = Object.values(formData).every(
-            (input) => !input.hasError && input.touched
-        );
 
         if (isFormValid) {
             try {
@@ -78,7 +80,7 @@ const Form = () => {
     };
 
     return (
-        <>
+        <React.Fragment>
             <h2 className="text-sm text-[#505476] font-bold mb-1">Contact me</h2>
             {formData.name.value}
             <div className={`form-container ${isExpanded ? "expanded" : ""}`}>
@@ -102,47 +104,30 @@ const Form = () => {
                     )}
                     <div className="w-full max-w pt-2">
                         <form className="shadow-2xl rounded px-4 pt-4 pb-6 mb-4" onSubmit={handleSubmit} noValidate>
-                            <FormField
-                                id="name"
-                                name="name"
-                                placeholder="Enter your name"
-                                value={formData.name.value}
-                                onChange={handleChange}
-                                onBlur={blurHandler}
-                                errorMessage={formData.name.errorMessage}
-                                hasError={formData.name.hasError}
-                                touched={formData.name.touched}
-                            />
-                            <FormField
-                                id="email"
-                                name="email"
-                                type="email"
-                                placeholder="Enter your email"
-                                value={formData.email.value}
-                                onChange={handleChange}
-                                onBlur={blurHandler}
-                                errorMessage={formData.email.errorMessage}
-                                hasError={formData.email.hasError}
-                                touched={formData.email.touched}
-                            />
-                            <FormField
-                                id="message"
-                                name="message"
-                                placeholder="Enter your message"
-                                value={formData.message.value}
-                                onChange={handleChange}
-                                onBlur={blurHandler}
-                                errorMessage={formData.message.errorMessage}
-                                hasError={formData.message.hasError}
-                                touched={formData.message.touched}
-                                isTextarea={true}
-                            />
+                            {formFields.map(({ id, name, placeholder, type, isTextarea }) => (
+                                <FormField
+                                    key={id}
+                                    id={id}
+                                    name={name}
+                                    type={type || "text"}
+                                    placeholder={placeholder}
+                                    value={formData[name].value}
+                                    onChange={handleChange}
+                                    onBlur={blurHandler}
+                                    errorMessage={formData[name].errorMessage}
+                                    hasError={formData[name].hasError}
+                                    touched={formData[name].touched}
+                                    isTextarea={isTextarea}
+                                />
+                            ))}
                             <div className="flex items-center justify-end">
                                 <button
-                                    className="bg-[#505476] hover:bg-blue-700 text-white font-bold py-1 px-4 text-xs rounded focus:outline-none focus:shadow-outline"
+                                    className={`bg-[#505476] hover:bg-blue-700 text-white font-bold py-1 px-4 text-xs rounded focus:outline-none focus:shadow-outline ${status === "Submitting..." ? "opacity-50 cursor-not-allowed" : ""
+                                        }`}
                                     type="submit"
+                                    disabled={status === "Submitting..."}
                                 >
-                                    Send
+                                    {status === "Submitting..." ? "Sending..." : "Send"}
                                 </button>
                             </div>
                         </form>
@@ -150,7 +135,7 @@ const Form = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </React.Fragment>
     )
 }
 export default Form;

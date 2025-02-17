@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import Skills from "./Skills";
 import { Link } from "react-router-dom";
 import JobEducationDetails from "../components/JobEducationDetails";
-import { intoduction, workexperiences, educationList, frontendSkills, backendSkills, toolsSkills, previousWorkexperiences, resumeDescription } from "../data";
+import SkillsSection from "../components/SkillsSection";
+import JobEducationDetailsSection from "../components/JobEducationDetailsSection"
+import { intoduction} from "../data/personalData";
+import { workexperiences, previousWorkexperiences } from "../data/workExperienceData";
+import {educationList } from "../data/educationsData";
 
 const MainContent = () => {
     const [toggleAccordion, setToggleAccordion] = useState(false);
@@ -13,37 +16,18 @@ const MainContent = () => {
     };
 
     const containerClass = isExpanded ? 'text-container expanded' : 'text-container';
+
     return (
-        <div className="md:basis-3/4 px-3 sm:w-full"
+        <main className="md:basis-3/4 px-3 sm:w-full"
             onMouseOver={() => setToggleAccordion(!toggleAccordion)}>
-            <div id="resume-description" className="rounded-lg leading-normal">{resumeDescription}</div>
-            <div className="text-xs md:pl-1 p-2 pb-0">{intoduction}<Link className="text-blue-500  hover:underline"
+            <header className="text-xs md:pl-1 p-2 pb-0">
+                {intoduction}
+                <Link className="text-blue-500  hover:underline"
                 to="/details">Read more</Link>
-            </div>
+            </header>
             <hr className="mt-2"></hr>
-            <div className="flex justify-start mt-2">
-                <h2 className=" font-bold text-[#505476] pl-1">Skills</h2>
-            </div>
-            <div className="flex justify-between mb-2 mr-4 mt-1">
-                <div>
-                    <h3 className="text-sm font-semibold pl-1">Frontend</h3>
-                    {frontendSkills.map((skill, index) => (
-                        <Skills key={index} skill={skill} />
-                    ))}
-                </div>
-                <div>
-                    <h3 className="text-sm font-semibold">Backend</h3>
-                    {backendSkills.map((skill, index) => (
-                        <Skills key={index} skill={skill} />
-                    ))}
-                </div>
-                <div>
-                    <h3 className="text-sm font-semibold">Tools</h3>
-                    {toolsSkills.map((skill, index) => (
-                        <Skills key={index} skill={skill} />
-                    ))}
-                </div>
-            </div>
+                <h2 className="mt-2 font-bold text-[#505476] pl-1">Skills</h2>
+            <SkillsSection />
             <hr className="mt-3"></hr>
             <div className="mt-4">
                 <div className="flex justify-start">
@@ -64,17 +48,10 @@ const MainContent = () => {
                 </button>
             </div>
             <hr className="mt-2"></hr>
-            <div className="mt-4">
-                <div className="flex justify-start">
-                    <h2 className="text-md font-bold text-[#505476]">Education and Qualifications</h2>
-                </div>
-                {educationList.map((education, index) =>
-                    <JobEducationDetails key={index} title={education.title} date={education.date} companyOrSchool="" description={education.credits} />
-                )}
-            </div>
+            <JobEducationDetailsSection title="Education and Qualifications" data={educationList} />
             <h2 className="text-md font-bold text-[#505476] pl-1">References</h2>
             <p className="pl-1 text-xs" >References available on request.</p>
-        </div>
+        </main>
     )
 }
 export default MainContent;

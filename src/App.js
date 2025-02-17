@@ -1,4 +1,5 @@
 ﻿import { Link, Routes, Route } from "react-router-dom";
+import React, { Fragment } from "react"
 import Details from "./pages/Details";
 import Home from "./pages/Home";
 function App() {
@@ -8,7 +9,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/details" element={<Details />} />
-                <Route path="*" element={<div>Page Not Found</div>} />
+                <Route path="*" element={<Fragment>Page Not Found</Fragment>} />
             </Routes>
         </div>
     );

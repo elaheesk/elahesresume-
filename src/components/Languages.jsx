@@ -1,8 +1,9 @@
 import { FaCircle } from "react-icons/fa";
+
 const Languages = ({ language }) => {
     return (
-        <div className="flex justify-between leading-[0.815rem]">
-            <div className="tooltip relative pl-0 block bg-gradient-to-l from-rgba(2,2,2,0.04) white
+        <section className="flex justify-between leading-[0.815rem]">
+            <aside className="tooltip relative pl-0 block bg-gradient-to-l from-rgba(2,2,2,0.04) white
                   mb-1 p-1 rounded-lg text-xs">
                 {language}
                 <div className="tooltiptext absolute invisible
@@ -12,17 +13,15 @@ const Languages = ({ language }) => {
                     {language === "Persian" ?
                         "Mother tounge" : "Fluent"}
                 </div>
-            </div>
+            </aside>
             <div className="flex justify-around items-center">
                 <FaCircle className="faCircle size-3" />
-                <FaCircle className="faCircle size-3 ml-1" />
-                <FaCircle className="faCircle size-3 ml-1" />
-                <FaCircle className="faCircle size-3 ml-1" />
-                {language === "Swedish" || language === "Persian" ?
-                    <FaCircle className="faCircle size-3 ml-1" /> :
-                    <FaCircle className="faCircleEmpty size-3 ml-1 bg-gradient-to-l hover:bg-gradient-to-r" />}
+                {[...Array(4)].map((_, index) => (
+                    <FaCircle key={index} className="faCircle size-3 ml-1" />
+                ))}
+
             </div>
-        </div>
+        </section>
     )
 }
 export default Languages;

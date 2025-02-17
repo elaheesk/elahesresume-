@@ -1,14 +1,15 @@
 ﻿import Languages from "./Languages";
 import { useNavigate } from "react-router-dom";
-import { languages, personalDetails, certifications } from "../data";
-import { fixSwedishCharacters } from "../ValidationFunctions";
+import { certifications } from "../data/educationsData";
+import { personalDetails, languages } from "../data/personalData";
+import { fixSwedishCharacters } from "../utils/formatters";
 import Form from "../components/Form";
 
 const SideBar = ({ tooltipContent, setTooltipContent }) => {
     const navigate = useNavigate();
 
     return(
-        <div className="personal-container px-4 mt-6">
+        <aside className="personal-container px-4 mt-6">
             <button className=" text-[#505476]
                     font-bold 
                     rounded-lg
@@ -16,7 +17,7 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                     hover:text-[#505476]"
                 onClick={() => navigate("/details")}>Personal</button>
             {personalDetails.map((item, index) => (
-                <div key={index} className="mt-4 flex justify-start">
+                <section key={index} className="mt-4 flex justify-start">
                     <div className=" mb-2 leading-[0.825rem]">
                         {item.label === 'Address' ? (
                             <div className="flex flex-justify-between">
@@ -38,19 +39,19 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                             <p className="text-xs mt-1">{item.value}</p>
                         )}
                     </div>
-                </div>
+                </section>
             ))}
-            <div className="mt-8">
+            <section className="mt-8">
                 <h2 className="text-sm text-[#505476] font-semibold mb-1">Languages</h2>
                 {languages.map((language, index) =>
                     <Languages key={index} language={language} />
                 )}
-            </div>
-            <div className="mt-8">
+            </section>
+            <section className="mt-8">
                 <h2 className="text-sm text-[#505476] font-semibold mb-1">Licenses & certifications</h2>
                 <div className="p-0 text-xs">
-                    {certifications.map((cerificate, idx) =>
-                        <div key={idx}>
+                    {certifications.map((cerificate) =>
+                        <div key={cerificate.id}>
                             <a
                                 href={cerificate.href}
                                 target="_blank"
@@ -61,11 +62,11 @@ const SideBar = ({ tooltipContent, setTooltipContent }) => {
                         </div>
                     )}
                 </div>
-            </div>
+            </section>
             <div className="mt-8">
                 <Form />
             </div>
-        </div>
+        </aside>
     )
 }
 export default SideBar;

@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { IoCloseSharp } from "react-icons/io5";
 import { FaPlus } from "react-icons/fa6";
-import { questions } from "../data"
+import { questions } from "../data/qaData"
 
 const Accordion = () => {
-    const [accordionContent, setAccordionContent] = useState([])
+    const [accordionContent, setAccordionContent] = useState(
+        questions.map((q) => ({ ...q, isOpen: false }))
+    );
 
     const toggleAccordion = (idx) => {
         const updatedAccordion = accordionContent.map((accordion, index) => {
@@ -21,9 +23,6 @@ const Accordion = () => {
         setAccordionContent(updatedAccordion);
     }
 
-    useEffect(() => {
-        setAccordionContent(questions);
-    }, [])
 
     return (
         <div className="accordion mt-6 mb-8">
